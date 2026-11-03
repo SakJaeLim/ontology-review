@@ -1,0 +1,9 @@
+!tests/
+!tests/**
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+.evidence-review/
+demo-output/
+build/

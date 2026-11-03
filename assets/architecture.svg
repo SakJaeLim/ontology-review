@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 510" role="img" aria-labelledby="title description">
+  <title id="title">Evidence review from a source revision to a wiki page</title>
+  <desc id="description">The inspector binds claims to observed source and rule revisions. Historical review decisions remain unchanged. A changed basis requires a new review before the inspector considers a claim eligible for reuse. This extension does not enforce native LLM Wiki behavior.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="none" stroke="#668477" stroke-width="1.5"/></marker>
+  </defs>
+  <rect width="1200" height="510" rx="20" fill="#f4f3ed"/>
+  <path d="M20 0h1160a20 20 0 0 1 20 20v110H0V20A20 20 0 0 1 20 0" fill="#102b3c"/>
+  <g font-family="Segoe UI,Malgun Gothic,Arial,sans-serif">
+    <text x="42" y="36" fill="#8dd8c3" font-size="11" font-weight="700" letter-spacing="2">LLM WIKI / EVIDENCE REVIEW</text>
+    <text x="42" y="77" fill="#fff" font-size="28" font-weight="650">A changed basis needs a new review.</text>
+    <text x="1158" y="77" text-anchor="end" fill="#c4d2d8" font-size="14">근거가 바뀌면, 검토도 다시.</text>
+    <g stroke="#668477" stroke-width="1.5" fill="none" marker-end="url(#arrow)">
+      <path d="M236 235h34"/><path d="M466 235h34"/><path d="M696 235h34"/><path d="M926 235h34"/>
+    </g>
+    <g fill="#fff" stroke="#d6dfd8">
+      <rect x="40" y="170" width="196" height="142" rx="12"/><rect x="270" y="170" width="196" height="142" rx="12"/>
+      <rect x="500" y="170" width="196" height="142" rx="12"/><rect x="730" y="170" width="196" height="142" rx="12"/>
+      <rect x="960" y="170" width="200" height="142" rx="12"/>
+    </g>
+    <g font-size="11" fill="#147465" font-weight="700">
+      <text x="58" y="195">01 / SOURCE</text><text x="288" y="195">02 / CLAIM</text><text x="518" y="195">03 / RULES</text><text x="748" y="195">04 / REVIEW</text><text x="978" y="195">05 / WIKI</text>
+    </g>
+    <g font-size="19" fill="#172b38" font-weight="650">
+      <text x="58" y="228">Source revision</text><text x="288" y="228">Bound claim</text><text x="518" y="228">SHACL check</text><text x="748" y="228">Current eligibility</text><text x="978" y="228">Affected pages</text>
+    </g>
+    <g font-size="12" fill="#637278">
+      <text x="58" y="255">File digest and exact lines</text><text x="58" y="277">파일 버전과 인용 범위</text>
+      <text x="288" y="255">Value, quote, source basis</text><text x="288" y="277">주장과 근거 연결</text>
+      <text x="518" y="255">Rules and focus coverage</text><text x="518" y="277">규칙 위반과 미검사 구분</text>
+      <text x="748" y="255">Compare the approved basis</text><text x="748" y="277">현재 기준으로 재사용 판단</text>
+      <text x="978" y="255">Trace claim dependencies</text><text x="978" y="277">다시 살펴볼 페이지 확인</text>
+    </g>
+    <path d="M138 314v36h690v-36" fill="none" stroke="#b2823e" stroke-width="1.5" stroke-dasharray="5 5"/>
+    <rect x="275" y="334" width="405" height="32" rx="6" fill="#fff2d4"/>
+    <text x="477" y="355" text-anchor="middle" fill="#8b5c18" font-size="12">Source or rule changes require another review</text>
+    <rect x="40" y="394" width="550" height="75" rx="10" fill="#e4eee7"/>
+    <text x="58" y="420" fill="#147465" font-size="13" font-weight="650">History stays intact</text>
+    <text x="58" y="445" fill="#42695a" font-size="12">Earlier approvals remain recorded. They do not approve a changed basis.</text>
+    <rect x="610" y="394" width="550" height="75" rx="10" fill="#e9ece8"/>
+    <text x="628" y="420" fill="#344e5a" font-size="13" font-weight="650">A separate inspector</text>
+    <text x="628" y="445" fill="#637278" font-size="12">Rule conformance is not factual truth. Native LLM Wiki behavior is unchanged.</text>
+  </g>
+</svg>

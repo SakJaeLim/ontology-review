@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "name": "Synthetic evidence review",
+  "claims": [
+    {
+      "id": "retention",
+      "title": "보존 기간 / Retention period",
+      "subject": "urn:demo:project",
+      "predicate": "urn:demo:retentionDays",
+      "value": 30,
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "evidence": [{"path": "sources/retention.md", "start_line": 3, "end_line": 3, "text": "SyntheticProject retains records for 30 days."}],
+      "rules": ["rules/retention.ttl"],
+      "wiki_pages": ["wiki/retention.md"]
+    },
+    {
+      "id": "owner",
+      "title": "담당 조직 / Responsible team",
+      "subject": "urn:demo:project",
+      "predicate": "urn:demo:owner",
+      "value": "Research Team",
+      "datatype": "http://www.w3.org/2001/XMLSchema#string",
+      "evidence": [{"path": "sources/owner.md", "start_line": 3, "end_line": 3, "text": "Research Team owns SyntheticProject."}],
+      "rules": ["rules/owner.ttl"],
+      "wiki_pages": ["wiki/owner.md"]
+    }
+  ]
+}

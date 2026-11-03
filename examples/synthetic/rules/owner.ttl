@@ -1,0 +1,8 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix demo: <urn:demo:> .
+
+demo:OwnerShape a sh:NodeShape ;
+    sh:targetNode demo:project ;
+    sh:property [ sh:path demo:owner ; sh:datatype xsd:string ;
+        sh:minCount 1 ; sh:maxCount 1 ; sh:minLength 1 ] .
