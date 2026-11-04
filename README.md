@@ -2,8 +2,6 @@
 
 [한국어](README.ko.md) / English
 
-**When evidence changes, review it again.**
-
 A small offline extension for examining claims, source revisions and local ontology constraints. It preserves earlier decisions and shows which declared wiki pages need attention after a source or rule changes.
 
 This is an experimental extension in [SakJaeLim's LLM Wiki fork](https://github.com/SakJaeLim/llm_wiki), built on [nashsu/llm_wiki](https://github.com/nashsu/llm_wiki). The desktop app and its existing features are upstream work. This extension has its own Python workspace; it does not intercept the desktop app's answers or change its native approval records.
@@ -24,6 +22,12 @@ This is an experimental extension in [SakJaeLim's LLM Wiki fork](https://github.
 ![English interface](assets/english.jpg)
 
 </details>
+
+## Design and integration candidates
+
+The compact report uses pinned [Open Props](https://github.com/argyleink/open-props) gray and spacing tokens and two [Lucide](https://github.com/lucide-icons/lucide) icons. All resources and license texts are included in the exported HTML. See [third-party notices](THIRD_PARTY_NOTICES.md).
+
+A [29-repository review](research/ontology-ecosystem-review.md) separates ontology authoring, semantic data catalogs, retrieval and change analysis. Microsoft Ontology Playground is a visual-authoring candidate; NVIDIA Auto Ontology is a data-dictionary adapter candidate. Neither engine is integrated here. The [repository table](research/ontology-ecosystem-repositories.csv) records stars, pinned commits and inspection depth.
 
 ## Run the recorded demo
 

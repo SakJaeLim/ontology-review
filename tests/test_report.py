@@ -25,8 +25,8 @@ def test_preserves_single_inspection_and_review_history(tmp_path):
     document = output.read_text(encoding="utf-8")
     assert embedded_report(document) == report
     assert 'lang="ko"' in document
-    assert "근거가 바뀌면, 검토도 다시." in document
-    assert "When evidence changes, review again." in document
+    assert "근거 검토" in document
+    assert "Evidence review" in document
     assert "Current reuse eligibility" in document
     assert "Decision history" in document
     assert "does not block native LLM Wiki approvals or answers" in document
@@ -107,6 +107,18 @@ def test_report_has_no_external_or_file_resources(tmp_path):
     assert "fetch(" not in document and "XMLHttpRequest" not in document
     assert "@import" not in document and "url(" not in document
     assert "default-src 'none'" in document
+
+
+def test_export_retains_vendored_design_licenses_and_decorative_icons(tmp_path):
+    output = tmp_path / "report.html"
+    render_report({"claims": []}, output)
+    document = output.read_text(encoding="utf-8")
+    assert "Copyright (c) 2021 Adam Argyle" in document
+    assert "Copyright (c) 2026 Lucide Icons and Contributors" in document
+    assert "Copyright (c) 2013-present Cole Bemis" in document
+    assert "THE SOFTWARE IS PROVIDED" in document
+    assert 'aria-hidden="true"><svg' in document
+    assert "__DESIGN_TOKENS__" not in document and "__SEARCH_ICON__" not in document
 
 
 @pytest.mark.parametrize("language", ["de", "<script>", ""])

@@ -22,6 +22,26 @@ The tests include malformed JSON types and Unicode, missing or changed inputs, r
 
 The generated HTML is self-contained. Its buttons switch stored inspection results. It does not send a review decision or edit a live source. Captures are available in [the README](README.md).
 
+## Interface follow-up, 2026-11-03
+
+The compact workbench keeps the same inspection JSON and decision logic. Open Props tokens and two Lucide SVGs are bundled with their complete upstream license texts.
+
+| Check | Result |
+| --- | --- |
+| Full local suite after the interface change | 59 passed, 6 skipped in 56.07 seconds |
+| Follow-up Windows junction and state-hardlink cases with fixture permissions | 5 passed; the symbolic-link case remains skipped |
+| Distinct cases across those runs | 64 passed, 1 skipped |
+| Wheel resources and renderer | All six design resources included; export from wheel matches source export byte for byte |
+| Recorded demo | Eligible counts 2, 1, 1, 2; inspection JSON retained |
+| Actual in-app browser, normal 1265-pixel viewport | Source mismatch, rule failure, two preserved decisions, English, search, blocked filter, empty state and keyboard disclosure checked |
+| Browser layout and logs | No horizontal page overflow; no captured warnings or errors |
+| UTC display | Whole seconds shown; original timestamp retained in dateTime and title |
+| Scoped independent review | No blocking regression; timestamp display issue fixed and checked |
+
+The refreshed media uses six actual captures of this interface. The 24-second video is an assembly of those captured states, not a continuous screen recording. No mobile browser or screen reader test was run for this follow-up.
+
+The ecosystem review ran four Microsoft validation-module cases and four NVIDIA model-schema cases. These are isolated module checks, not engine deployments or retrieval benchmarks. See [the research record](research/ontology-ecosystem-review.md).
+
 ## Repeat the checks
 
 From `extensions/evidence-review`:

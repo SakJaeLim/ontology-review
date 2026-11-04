@@ -19,5 +19,8 @@ evidence-wiki = "evidence_wiki.__main__:main"
 [tool.setuptools.packages.find]
 include = ["evidence_wiki*"]
 
+[tool.setuptools.package-data]
+evidence_wiki = ["design/*.css", "design/*.svg", "design/LICENSE.*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -2,8 +2,6 @@
 
 한국어 / [English](README.md)
 
-**근거가 바뀌면, 검토도 다시.**
-
 문서의 주장과 원문, 온톨로지 규칙을 함께 확인하는 로컬 검토 도구입니다. 예전 승인 기록을 보존하면서 원문이나 규칙이 바뀐 뒤 어떤 위키 페이지를 다시 살펴봐야 하는지 보여줍니다.
 
 [nashsu/llm_wiki](https://github.com/nashsu/llm_wiki)를 기반으로 한 [SakJaeLim의 포크](https://github.com/SakJaeLim/llm_wiki)에 추가한 실험적 확장입니다. 데스크톱 앱과 기존 기능은 원저자의 작업입니다. 이번 확장은 별도의 Python 작업 공간에서 실행하며, 앱의 답변이나 기존 승인 기록에 직접 개입하지 않습니다.
@@ -24,6 +22,12 @@
 ![영어 화면](assets/english.jpg)
 
 </details>
+
+## 디자인과 연결 후보
+
+검토 화면에는 [Open Props](https://github.com/argyleink/open-props)의 색상과 간격, [Lucide](https://github.com/lucide-icons/lucide)의 아이콘 두 개를 사용했습니다. 외부 서버를 요청하지 않으며, 내보낸 HTML에도 라이선스 전문이 포함됩니다. [출처와 사용 조건](THIRD_PARTY_NOTICES.md)을 확인할 수 있습니다.
+
+[29개 저장소 조사](research/ontology-ecosystem-review.md)를 통해 편집, 데이터 사전, 검색, 변경 영향 분석을 나눠 검토했습니다. Microsoft Ontology Playground는 편집 화면, NVIDIA Auto Ontology는 데이터 사전 연결 후보입니다. 두 엔진이 현재 확장에 통합된 상태는 아닙니다. [비교표](research/ontology-ecosystem-repositories.csv)에 별 수와 고정 커밋, 확인한 범위를 기록했습니다.
 
 ## 데모 실행
 

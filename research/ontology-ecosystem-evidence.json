@@ -1,0 +1,1002 @@
+{
+  "metadata": {
+    "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+    "repositories": [
+      {
+        "full_name": "NVIDIA/auto-ontology",
+        "html_url": "https://github.com/NVIDIA/auto-ontology",
+        "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+        "stargazers_count": 1127,
+        "forks_count": 112,
+        "open_issues_count": 33,
+        "pushed_at": "2026-11-03T07:57:59Z",
+        "updated_at": "2026-11-03T08:09:04Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "",
+        "license": "Apache-2.0",
+        "head_sha": "fb496d406acfd34db0af3c5d188080097779021f"
+      },
+      {
+        "full_name": "NVIDIA/auto-ontology-eval",
+        "html_url": "https://github.com/NVIDIA/auto-ontology-eval",
+        "description": "LLM-powered Text-to-SQL evaluation toolkit: schema ingestion, retrieval eval, and standalone SQL judge/re-scorer.",
+        "stargazers_count": 22,
+        "forks_count": 5,
+        "open_issues_count": 5,
+        "pushed_at": "2026-11-02T09:51:23Z",
+        "updated_at": "2026-11-03T07:05:54Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": null,
+        "license": "Apache-2.0",
+        "head_sha": "a7f95e358a4dba79cc168f933c9081f971f2968b"
+      },
+      {
+        "full_name": "microsoft/Ontology-Playground",
+        "html_url": "https://github.com/microsoft/Ontology-Playground",
+        "description": "Free, open-source web app for learning about ontologies and Microsoft Fabric IQ. Explore a catalogue of pre-built ontologies, design your own visually, export as RDF/XML, and share interactive diagrams. Zero backend, fully static.",
+        "stargazers_count": 2998,
+        "forks_count": 391,
+        "open_issues_count": 14,
+        "pushed_at": "2026-10-31T05:08:23Z",
+        "updated_at": "2026-11-02T16:21:04Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": null,
+        "license": "MIT",
+        "head_sha": "7bf7acb427424ce68f917fa26f484fb06ca42051"
+      },
+      {
+        "full_name": "microsoft/ograg2",
+        "html_url": "https://github.com/microsoft/ograg2",
+        "description": "OGRAG  - Release Version",
+        "stargazers_count": 155,
+        "forks_count": 38,
+        "open_issues_count": 15,
+        "pushed_at": "2026-03-12T09:56:27Z",
+        "updated_at": "2026-10-28T09:39:52Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "",
+        "license": "MIT",
+        "head_sha": "768048b92bd74049d2c64627fab7327f6d5ff2bd"
+      },
+      {
+        "full_name": "microsoft/graphrag",
+        "html_url": "https://github.com/microsoft/graphrag",
+        "description": "A modular graph-based Retrieval-Augmented Generation (RAG) system",
+        "stargazers_count": 36537,
+        "forks_count": 3869,
+        "open_issues_count": 61,
+        "pushed_at": "2026-11-02T07:24:01Z",
+        "updated_at": "2026-11-03T07:58:59Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://microsoft.github.io/graphrag/",
+        "license": "MIT",
+        "head_sha": "34b2b67ae4601ad0b47bcd179fbe3f2a23aa0857"
+      },
+      {
+        "full_name": "HKUDS/LightRAG",
+        "html_url": "https://github.com/HKUDS/LightRAG",
+        "description": "[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation",
+        "stargazers_count": 40497,
+        "forks_count": 5754,
+        "open_issues_count": 433,
+        "pushed_at": "2026-10-29T18:05:03Z",
+        "updated_at": "2026-11-03T08:01:11Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://arxiv.org/abs/2410.05779",
+        "license": "MIT",
+        "head_sha": "aaebfe1bb8d55deb6a4304d357a3bf4c92fcd40a"
+      },
+      {
+        "full_name": "getzep/graphiti",
+        "html_url": "https://github.com/getzep/graphiti",
+        "description": "Build Real-Time Knowledge Graphs for AI Agents",
+        "stargazers_count": 32464,
+        "forks_count": 3331,
+        "open_issues_count": 545,
+        "pushed_at": "2026-11-01T01:05:00Z",
+        "updated_at": "2026-11-03T07:40:39Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://help.getzep.com/graphiti",
+        "license": "Apache-2.0",
+        "head_sha": "16bf514380de4e44884aed6779bece220e6fe470"
+      },
+      {
+        "full_name": "topoteretes/cognee",
+        "html_url": "https://github.com/topoteretes/cognee",
+        "description": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free",
+        "stargazers_count": 33019,
+        "forks_count": 3450,
+        "open_issues_count": 1080,
+        "pushed_at": "2026-11-03T07:33:09Z",
+        "updated_at": "2026-11-03T07:36:02Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://www.cognee.ai",
+        "license": "Apache-2.0",
+        "head_sha": "525b1d1179c550cd5b5661bcbf8f00f57a676928"
+      },
+      {
+        "full_name": "semantica-agi/semantica",
+        "html_url": "https://github.com/semantica-agi/semantica",
+        "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
+        "stargazers_count": 14406,
+        "forks_count": 1698,
+        "open_issues_count": 130,
+        "pushed_at": "2026-11-03T05:29:45Z",
+        "updated_at": "2026-11-03T08:01:18Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://getsemantica.ai",
+        "license": "MIT",
+        "head_sha": "4b6de4e356421f4ff39d7e521b52f321c00b27ff"
+      },
+      {
+        "full_name": "protegeproject/protege",
+        "html_url": "https://github.com/protegeproject/protege",
+        "description": "Protege Desktop",
+        "stargazers_count": 1624,
+        "forks_count": 318,
+        "open_issues_count": 446,
+        "pushed_at": "2026-10-01T16:36:14Z",
+        "updated_at": "2026-11-03T07:36:28Z",
+        "archived": false,
+        "default_branch": "master",
+        "homepage": "http://protege.stanford.edu",
+        "license": "NOASSERTION",
+        "head_sha": "bf03cccc65ea664e139d6829bba6d209ef58ee55"
+      },
+      {
+        "full_name": "apache/jena",
+        "html_url": "https://github.com/apache/jena",
+        "description": "Apache Jena, A free and open source Java framework for building Semantic Web and Linked Data applications.",
+        "stargazers_count": 1494,
+        "forks_count": 731,
+        "open_issues_count": 126,
+        "pushed_at": "2026-11-02T21:15:20Z",
+        "updated_at": "2026-11-02T21:15:25Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://jena.apache.org/",
+        "license": "Apache-2.0",
+        "head_sha": "c9b6b495f4bd8060e23b0431ca023243658050e1"
+      },
+      {
+        "full_name": "RDFLib/rdflib",
+        "html_url": "https://github.com/RDFLib/rdflib",
+        "description": "RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information.",
+        "stargazers_count": 2545,
+        "forks_count": 631,
+        "open_issues_count": 349,
+        "pushed_at": "2026-11-02T18:46:35Z",
+        "updated_at": "2026-11-02T03:35:09Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://rdflib.readthedocs.org",
+        "license": "BSD-3-Clause",
+        "head_sha": "114dd59d48fc75aea7fcb3276bd0f13e4f3103b4"
+      },
+      {
+        "full_name": "RDFLib/pySHACL",
+        "html_url": "https://github.com/RDFLib/pySHACL",
+        "description": "A Python validator for SHACL",
+        "stargazers_count": 367,
+        "forks_count": 81,
+        "open_issues_count": 50,
+        "pushed_at": "2026-10-28T22:07:57Z",
+        "updated_at": "2026-11-03T01:09:36Z",
+        "archived": false,
+        "default_branch": "master",
+        "homepage": "",
+        "license": "Apache-2.0",
+        "head_sha": "df57bd4390bd397811d7c2d3b7cf0e49cd21c189"
+      },
+      {
+        "full_name": "oeg-upm/OntoRipple",
+        "html_url": "https://github.com/oeg-upm/OntoRipple",
+        "description": "Managing the evolution of associated knowledge graph assets",
+        "stargazers_count": 12,
+        "forks_count": 3,
+        "open_issues_count": 3,
+        "pushed_at": "2026-01-09T11:28:24Z",
+        "updated_at": "2026-09-15T09:35:41Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": null,
+        "license": "Apache-2.0",
+        "head_sha": "5adde3241c765c6f17e9aa98e384168bd753dc48"
+      },
+      {
+        "full_name": "Graphify-Labs/graphify",
+        "html_url": "https://github.com/Graphify-Labs/graphify",
+        "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+        "stargazers_count": 141413,
+        "forks_count": 13526,
+        "open_issues_count": 1634,
+        "pushed_at": "2026-11-02T19:38:53Z",
+        "updated_at": "2026-11-03T08:09:11Z",
+        "archived": false,
+        "default_branch": "v8",
+        "homepage": "https://www.graphify.com",
+        "license": "Apache-2.0",
+        "head_sha": "8e6a6d2129d4aeffc7a0e9ed79b153f7f057f42b"
+      },
+      {
+        "full_name": "deeplethe/utopia",
+        "html_url": "https://github.com/deeplethe/utopia",
+        "description": "World's first open-source enterprise world model.",
+        "stargazers_count": 8664,
+        "forks_count": 1186,
+        "open_issues_count": 78,
+        "pushed_at": "2026-11-03T04:00:21Z",
+        "updated_at": "2026-11-03T07:42:22Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": null,
+        "license": "Apache-2.0",
+        "head_sha": "7ecf9915545a56ad485c16fc658ed6bdb41889b2"
+      },
+      {
+        "full_name": "HelixDB/helix-foundry",
+        "html_url": "https://github.com/HelixDB/helix-foundry",
+        "description": "Connect your company's data, let an agent draft an ontology over it, and load it into HelixDB as one graph you can explore and ask questions of. Hosted at foundry.helix-db.com, or run it on your own machine.",
+        "stargazers_count": 2004,
+        "forks_count": 296,
+        "open_issues_count": 14,
+        "pushed_at": "2026-11-02T19:10:15Z",
+        "updated_at": "2026-11-03T07:55:36Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://foundry.helix-db.com",
+        "license": "Apache-2.0",
+        "head_sha": "a59da7d377fb73bd37fb17e3a8065c31e84dfcfd"
+      },
+      {
+        "full_name": "fabio-rovai/open-ontologies",
+        "html_url": "https://github.com/fabio-rovai/open-ontologies",
+        "description": "Plan, apply and roll back changes to a production ontology, with a blast radius report and a proof an auditor can re-check.",
+        "stargazers_count": 2785,
+        "forks_count": 311,
+        "open_issues_count": 1,
+        "pushed_at": "2026-11-02T13:25:58Z",
+        "updated_at": "2026-11-03T05:54:44Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://tesseractsemantics.com",
+        "license": "MIT",
+        "head_sha": "c7fd75f9491253c56e4d4f408ceac179de343e48"
+      },
+      {
+        "full_name": "antvis/G6",
+        "html_url": "https://github.com/antvis/G6",
+        "description": "♾ A Graph Visualization Framework in JavaScript.",
+        "stargazers_count": 12373,
+        "forks_count": 1652,
+        "open_issues_count": 333,
+        "pushed_at": "2026-10-27T11:58:25Z",
+        "updated_at": "2026-11-03T05:49:41Z",
+        "archived": false,
+        "default_branch": "v5",
+        "homepage": "https://g6.antv.antgroup.com/",
+        "license": "MIT",
+        "head_sha": "55a74698a9b432df993daae744c4c5526ab097b0"
+      },
+      {
+        "full_name": "cytoscape/cytoscape.js",
+        "html_url": "https://github.com/cytoscape/cytoscape.js",
+        "description": "Graph theory (network) library for visualisation and analysis",
+        "stargazers_count": 11262,
+        "forks_count": 1689,
+        "open_issues_count": 33,
+        "pushed_at": "2026-10-30T19:56:09Z",
+        "updated_at": "2026-11-02T09:09:02Z",
+        "archived": false,
+        "default_branch": "unstable",
+        "homepage": "https://js.cytoscape.org",
+        "license": "MIT",
+        "head_sha": "acaa3ad9a1288a8242948fe3d9f1c674c25adea9"
+      },
+      {
+        "full_name": "xyflow/xyflow",
+        "html_url": "https://github.com/xyflow/xyflow",
+        "description": "React Flow | Svelte Flow - Powerful open source libraries for building node-based UIs with React (https://reactflow.dev) or Svelte (https://svelteflow.dev). Ready out-of-the-box and infinitely customizable.",
+        "stargazers_count": 38879,
+        "forks_count": 2559,
+        "open_issues_count": 149,
+        "pushed_at": "2026-11-02T15:26:21Z",
+        "updated_at": "2026-11-03T05:42:38Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://xyflow.com",
+        "license": "MIT",
+        "head_sha": "1bc405cd113618c17fd181b931a9fe573bec9fee"
+      },
+      {
+        "full_name": "shadcn-ui/ui",
+        "html_url": "https://github.com/shadcn-ui/ui",
+        "description": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make your own.",
+        "stargazers_count": 127233,
+        "forks_count": 12006,
+        "open_issues_count": 1775,
+        "pushed_at": "2026-11-02T07:02:07Z",
+        "updated_at": "2026-11-03T08:04:32Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://ui.shadcn.com",
+        "license": "MIT",
+        "head_sha": "4aaea19d9cff3e0908e12a8c1d504b8c5ec34610"
+      },
+      {
+        "full_name": "primer/css",
+        "html_url": "https://github.com/primer/css",
+        "description": "Primer is GitHub's design system. This is the CSS implementation",
+        "stargazers_count": 13050,
+        "forks_count": 1292,
+        "open_issues_count": 4,
+        "pushed_at": "2026-11-02T21:46:07Z",
+        "updated_at": "2026-11-02T21:39:50Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://primer.style/css",
+        "license": "MIT",
+        "head_sha": "a007881592377402379a97f58691ee05f39ac8f0"
+      },
+      {
+        "full_name": "radix-ui/primitives",
+        "html_url": "https://github.com/radix-ui/primitives",
+        "description": "Radix Primitives is an open-source UI component library for building high-quality, accessible design systems and web apps. Maintained by @workos.",
+        "stargazers_count": 19467,
+        "forks_count": 1298,
+        "open_issues_count": 265,
+        "pushed_at": "2026-10-14T21:52:47Z",
+        "updated_at": "2026-11-03T05:09:50Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://radix-ui.com/primitives",
+        "license": "MIT",
+        "head_sha": "eb3a2b7091293e27df8f9ba906632d8daa3d81a3"
+      },
+      {
+        "full_name": "tabler/tabler",
+        "html_url": "https://github.com/tabler/tabler",
+        "description": "Free and open source admin dashboard UI kit built on Bootstrap: 100+ pages, 6,000+ icons, dark mode, RTL.",
+        "stargazers_count": 41991,
+        "forks_count": 4435,
+        "open_issues_count": 96,
+        "pushed_at": "2026-10-29T21:40:49Z",
+        "updated_at": "2026-11-03T07:42:24Z",
+        "archived": false,
+        "default_branch": "dev",
+        "homepage": "https://tabler.io",
+        "license": "MIT",
+        "head_sha": "096491dea4886f78891c2e29310351d5aee6c460"
+      },
+      {
+        "full_name": "tabler/tabler-icons",
+        "html_url": "https://github.com/tabler/tabler-icons",
+        "description": "A set of over 6200 free MIT-licensed high-quality SVG icons for you to use in your web projects.",
+        "stargazers_count": 22532,
+        "forks_count": 1261,
+        "open_issues_count": 89,
+        "pushed_at": "2026-10-29T15:40:55Z",
+        "updated_at": "2026-11-03T07:45:45Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://tabler.io/icons",
+        "license": "MIT",
+        "head_sha": "ed177a085b652fe04ec4f37ced867c94621e7840"
+      },
+      {
+        "full_name": "lucide-icons/lucide",
+        "html_url": "https://github.com/lucide-icons/lucide",
+        "description": "Beautiful & consistent icon toolkit made by the community. Lucide is an open-source icon library that provides 2000+ vector (svg) files for displaying icons and symbols in digital and non-digital projects. ",
+        "stargazers_count": 25481,
+        "forks_count": 1668,
+        "open_issues_count": 366,
+        "pushed_at": "2026-11-03T06:05:24Z",
+        "updated_at": "2026-11-03T07:39:06Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://lucide.dev",
+        "license": "NOASSERTION",
+        "head_sha": "4b203ec9b6002fd74fd5dadc8612220e64289305"
+      },
+      {
+        "full_name": "argyleink/open-props",
+        "html_url": "https://github.com/argyleink/open-props",
+        "description": "CSS custom properties to help accelerate adaptive and consistent design.",
+        "stargazers_count": 5563,
+        "forks_count": 220,
+        "open_issues_count": 77,
+        "pushed_at": "2026-10-11T23:53:54Z",
+        "updated_at": "2026-11-03T00:57:48Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://open-props.style",
+        "license": "MIT",
+        "head_sha": "f39ab7c377a0e047f930982e3611bbc95254a260"
+      },
+      {
+        "full_name": "tailwindlabs/headlessui",
+        "html_url": "https://github.com/tailwindlabs/headlessui",
+        "description": "Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.",
+        "stargazers_count": 28805,
+        "forks_count": 1214,
+        "open_issues_count": 122,
+        "pushed_at": "2026-04-13T16:12:31Z",
+        "updated_at": "2026-11-02T21:32:34Z",
+        "archived": false,
+        "default_branch": "main",
+        "homepage": "https://headlessui.com",
+        "license": "MIT",
+        "head_sha": "eea57cf46fd6767ed1059012f7073b88eb159fba"
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "repository": "NVIDIA/auto-ontology",
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "stars": 1127,
+      "license_api": "Apache-2.0",
+      "head_sha": "fb496d406acfd34db0af3c5d188080097779021f",
+      "pushed_at": "2026-11-03T07:57:59Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "data dictionary and semantic SQL layer",
+      "inspection": "metadata and bounded source/README review; isolated validation module executed",
+      "decision": "adapter candidate; four schema checks"
+    },
+    {
+      "repository": "NVIDIA/auto-ontology-eval",
+      "url": "https://github.com/NVIDIA/auto-ontology-eval",
+      "stars": 22,
+      "license_api": "Apache-2.0",
+      "head_sha": "a7f95e358a4dba79cc168f933c9081f971f2968b",
+      "pushed_at": "2026-11-02T09:51:23Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "SQL evaluation",
+      "inspection": "metadata",
+      "decision": "metadata only"
+    },
+    {
+      "repository": "microsoft/Ontology-Playground",
+      "url": "https://github.com/microsoft/Ontology-Playground",
+      "stars": 2998,
+      "license_api": "MIT",
+      "head_sha": "7bf7acb427424ce68f917fa26f484fb06ca42051",
+      "pushed_at": "2026-10-31T05:08:23Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "visual ontology designer",
+      "inspection": "metadata and bounded source/README review; isolated validation module executed",
+      "decision": "forked; four validation module checks"
+    },
+    {
+      "repository": "microsoft/ograg2",
+      "url": "https://github.com/microsoft/ograg2",
+      "stars": 155,
+      "license_api": "MIT",
+      "head_sha": "768048b92bd74049d2c64627fab7327f6d5ff2bd",
+      "pushed_at": "2026-03-12T09:56:27Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "ontology-guided retrieval",
+      "inspection": "metadata and bounded source/README review",
+      "decision": "research baseline candidate; query code read"
+    },
+    {
+      "repository": "microsoft/graphrag",
+      "url": "https://github.com/microsoft/graphrag",
+      "stars": 36537,
+      "license_api": "MIT",
+      "head_sha": "34b2b67ae4601ad0b47bcd179fbe3f2a23aa0857",
+      "pushed_at": "2026-11-02T07:24:01Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "document graph retrieval",
+      "inspection": "metadata",
+      "decision": "retrieval comparison candidate"
+    },
+    {
+      "repository": "HKUDS/LightRAG",
+      "url": "https://github.com/HKUDS/LightRAG",
+      "stars": 40497,
+      "license_api": "MIT",
+      "head_sha": "aaebfe1bb8d55deb6a4304d357a3bf4c92fcd40a",
+      "pushed_at": "2026-10-29T18:05:03Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "graph and vector retrieval",
+      "inspection": "metadata and bounded source/README review",
+      "decision": "small-corpus retrieval comparison candidate"
+    },
+    {
+      "repository": "getzep/graphiti",
+      "url": "https://github.com/getzep/graphiti",
+      "stars": 32464,
+      "license_api": "Apache-2.0",
+      "head_sha": "16bf514380de4e44884aed6779bece220e6fe470",
+      "pushed_at": "2026-11-01T01:05:00Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "temporal relationship graph",
+      "inspection": "metadata and bounded source/README review",
+      "decision": "temporal model reference"
+    },
+    {
+      "repository": "topoteretes/cognee",
+      "url": "https://github.com/topoteretes/cognee",
+      "stars": 33019,
+      "license_api": "Apache-2.0",
+      "head_sha": "525b1d1179c550cd5b5661bcbf8f00f57a676928",
+      "pushed_at": "2026-11-03T07:33:09Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "knowledge memory platform",
+      "inspection": "metadata and bounded source/README review",
+      "decision": "separate experiment; deployment license boundaries"
+    },
+    {
+      "repository": "semantica-agi/semantica",
+      "url": "https://github.com/semantica-agi/semantica",
+      "stars": 14406,
+      "license_api": "MIT",
+      "head_sha": "4b6de4e356421f4ff39d7e521b52f321c00b27ff",
+      "pushed_at": "2026-11-03T05:29:45Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "semantic graph framework",
+      "inspection": "metadata and bounded source/README review",
+      "decision": "existing candidate; bounded README refresh"
+    },
+    {
+      "repository": "protegeproject/protege",
+      "url": "https://github.com/protegeproject/protege",
+      "stars": 1624,
+      "license_api": "NOASSERTION",
+      "head_sha": "bf03cccc65ea664e139d6829bba6d209ef58ee55",
+      "pushed_at": "2026-10-01T16:36:14Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "ontology editor",
+      "inspection": "metadata",
+      "decision": "metadata only; inspect actual licenses before reuse"
+    },
+    {
+      "repository": "apache/jena",
+      "url": "https://github.com/apache/jena",
+      "stars": 1494,
+      "license_api": "Apache-2.0",
+      "head_sha": "c9b6b495f4bd8060e23b0431ca023243658050e1",
+      "pushed_at": "2026-11-02T21:15:20Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "RDF framework",
+      "inspection": "metadata",
+      "decision": "metadata only; standard ecosystem option"
+    },
+    {
+      "repository": "RDFLib/rdflib",
+      "url": "https://github.com/RDFLib/rdflib",
+      "stars": 2545,
+      "license_api": "BSD-3-Clause",
+      "head_sha": "114dd59d48fc75aea7fcb3276bd0f13e4f3103b4",
+      "pushed_at": "2026-11-02T18:46:35Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "Python RDF",
+      "inspection": "metadata",
+      "decision": "already used by evidence-review extension"
+    },
+    {
+      "repository": "RDFLib/pySHACL",
+      "url": "https://github.com/RDFLib/pySHACL",
+      "stars": 367,
+      "license_api": "Apache-2.0",
+      "head_sha": "df57bd4390bd397811d7c2d3b7cf0e49cd21c189",
+      "pushed_at": "2026-10-28T22:07:57Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "SHACL validation",
+      "inspection": "metadata",
+      "decision": "already used by evidence-review extension"
+    },
+    {
+      "repository": "oeg-upm/OntoRipple",
+      "url": "https://github.com/oeg-upm/OntoRipple",
+      "stars": 12,
+      "license_api": "Apache-2.0",
+      "head_sha": "5adde3241c765c6f17e9aa98e384168bd753dc48",
+      "pushed_at": "2026-01-09T11:28:24Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "ontology change impact",
+      "inspection": "metadata",
+      "decision": "existing fork; comparison candidate"
+    },
+    {
+      "repository": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "stars": 141413,
+      "license_api": "Apache-2.0",
+      "head_sha": "8e6a6d2129d4aeffc7a0e9ed79b153f7f057f42b",
+      "pushed_at": "2026-11-02T19:38:53Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "code and document relationship map",
+      "inspection": "metadata and bounded source/README review",
+      "decision": "source navigation candidate"
+    },
+    {
+      "repository": "deeplethe/utopia",
+      "url": "https://github.com/deeplethe/utopia",
+      "stars": 8664,
+      "license_api": "Apache-2.0",
+      "head_sha": "7ecf9915545a56ad485c16fc658ed6bdb41889b2",
+      "pushed_at": "2026-11-03T04:00:21Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "ontology and temporal graph platform",
+      "inspection": "metadata and bounded source/README review",
+      "decision": "separate platform comparison; benchmark unverified"
+    },
+    {
+      "repository": "HelixDB/helix-foundry",
+      "url": "https://github.com/HelixDB/helix-foundry",
+      "stars": 2004,
+      "license_api": "Apache-2.0",
+      "head_sha": "a59da7d377fb73bd37fb17e3a8065c31e84dfcfd",
+      "pushed_at": "2026-11-02T19:10:15Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "ontology-related discovery candidate",
+      "inspection": "metadata",
+      "decision": "metadata only; no adoption decision"
+    },
+    {
+      "repository": "fabio-rovai/open-ontologies",
+      "url": "https://github.com/fabio-rovai/open-ontologies",
+      "stars": 2785,
+      "license_api": "MIT",
+      "head_sha": "c7fd75f9491253c56e4d4f408ceac179de343e48",
+      "pushed_at": "2026-11-02T13:25:58Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "change planning and proof checking",
+      "inspection": "metadata and bounded source/README review",
+      "decision": "next deep-reproduction candidate"
+    },
+    {
+      "repository": "antvis/G6",
+      "url": "https://github.com/antvis/G6",
+      "stars": 12373,
+      "license_api": "MIT",
+      "head_sha": "55a74698a9b432df993daae744c4c5526ab097b0",
+      "pushed_at": "2026-10-27T11:58:25Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "graph visualization",
+      "inspection": "metadata",
+      "decision": "metadata only; future graph UI comparison"
+    },
+    {
+      "repository": "cytoscape/cytoscape.js",
+      "url": "https://github.com/cytoscape/cytoscape.js",
+      "stars": 11262,
+      "license_api": "MIT",
+      "head_sha": "acaa3ad9a1288a8242948fe3d9f1c674c25adea9",
+      "pushed_at": "2026-10-30T19:56:09Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "graph visualization",
+      "inspection": "metadata",
+      "decision": "used upstream by Playground; not newly embedded"
+    },
+    {
+      "repository": "xyflow/xyflow",
+      "url": "https://github.com/xyflow/xyflow",
+      "stars": 38879,
+      "license_api": "MIT",
+      "head_sha": "1bc405cd113618c17fd181b931a9fe573bec9fee",
+      "pushed_at": "2026-11-02T15:26:21Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "node-based editor",
+      "inspection": "metadata",
+      "decision": "metadata only; future graph UI comparison"
+    },
+    {
+      "repository": "shadcn-ui/ui",
+      "url": "https://github.com/shadcn-ui/ui",
+      "stars": 127233,
+      "license_api": "MIT",
+      "head_sha": "4aaea19d9cff3e0908e12a8c1d504b8c5ec34610",
+      "pushed_at": "2026-11-02T07:02:07Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "React components",
+      "inspection": "metadata",
+      "decision": "defer until native app integration"
+    },
+    {
+      "repository": "primer/css",
+      "url": "https://github.com/primer/css",
+      "stars": 13050,
+      "license_api": "MIT",
+      "head_sha": "a007881592377402379a97f58691ee05f39ac8f0",
+      "pushed_at": "2026-11-02T21:46:07Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "design system",
+      "inspection": "metadata",
+      "decision": "metadata only; visual reference candidate"
+    },
+    {
+      "repository": "radix-ui/primitives",
+      "url": "https://github.com/radix-ui/primitives",
+      "stars": 19467,
+      "license_api": "MIT",
+      "head_sha": "eb3a2b7091293e27df8f9ba906632d8daa3d81a3",
+      "pushed_at": "2026-10-14T21:52:47Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "accessible React primitives",
+      "inspection": "metadata",
+      "decision": "defer until native app integration"
+    },
+    {
+      "repository": "tabler/tabler",
+      "url": "https://github.com/tabler/tabler",
+      "stars": 41991,
+      "license_api": "MIT",
+      "head_sha": "096491dea4886f78891c2e29310351d5aee6c460",
+      "pushed_at": "2026-10-29T21:40:49Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "dashboard templates",
+      "inspection": "metadata",
+      "decision": "not bundled; too broad for current report"
+    },
+    {
+      "repository": "tabler/tabler-icons",
+      "url": "https://github.com/tabler/tabler-icons",
+      "stars": 22532,
+      "license_api": "MIT",
+      "head_sha": "ed177a085b652fe04ec4f37ced867c94621e7840",
+      "pushed_at": "2026-10-29T15:40:55Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "icons",
+      "inspection": "metadata",
+      "decision": "metadata only; selected Lucide instead"
+    },
+    {
+      "repository": "lucide-icons/lucide",
+      "url": "https://github.com/lucide-icons/lucide",
+      "stars": 25481,
+      "license_api": "NOASSERTION",
+      "head_sha": "4b203ec9b6002fd74fd5dadc8612220e64289305",
+      "pushed_at": "2026-11-03T06:05:24Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "SVG icons",
+      "inspection": "metadata, selected source and full licenses; actual vendoring",
+      "decision": "two pinned icons and full licenses vendored"
+    },
+    {
+      "repository": "argyleink/open-props",
+      "url": "https://github.com/argyleink/open-props",
+      "stars": 5563,
+      "license_api": "MIT",
+      "head_sha": "f39ab7c377a0e047f930982e3611bbc95254a260",
+      "pushed_at": "2026-10-11T23:53:54Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "CSS design tokens",
+      "inspection": "metadata, selected source and full licenses; actual vendoring",
+      "decision": "20 pinned gray and spacing tokens vendored"
+    },
+    {
+      "repository": "tailwindlabs/headlessui",
+      "url": "https://github.com/tailwindlabs/headlessui",
+      "stars": 28805,
+      "license_api": "MIT",
+      "head_sha": "eea57cf46fd6767ed1059012f7073b88eb159fba",
+      "pushed_at": "2026-04-13T16:12:31Z",
+      "retrieved_at": "2026-11-03T08:09:23.156305+00:00",
+      "role": "headless UI components",
+      "inspection": "metadata",
+      "decision": "metadata only; not adopted"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "sources/deeplethe__utopia/README.md",
+      "sha256": "11a2691fef3555417a8819e8aefa893116372aab0ffd359bd1d6be056725a521",
+      "bytes": 16210
+    },
+    {
+      "path": "sources/fabio-rovai__open-ontologies/README.md",
+      "sha256": "a2a301ee22cbcc2cf6029ba283f3a527791d12e942c0268aa88ddf922b12c9b9",
+      "bytes": 31835
+    },
+    {
+      "path": "sources/getzep__graphiti/README.md",
+      "sha256": "4035c6272f87aae2c4edcb1674c3414c026b6def895ee2cfb895e1a38363a46f",
+      "bytes": 35216
+    },
+    {
+      "path": "sources/Graphify-Labs__graphify/README.md",
+      "sha256": "910baa0b85c9cc5e5ef889e8bccea1ec9b24e262ec87a9272bc93f8692293ba9",
+      "bytes": 37280
+    },
+    {
+      "path": "sources/HKUDS__LightRAG/README.md",
+      "sha256": "92afcc0535bb4a7b92d74cd284d5bf2806f66d1e658bed2ec8cc7cbaaed24e35",
+      "bytes": 52595
+    },
+    {
+      "path": "sources/microsoft__ograg2/query_engine/ontograph_query_engine.py",
+      "sha256": "8a66ff099b00bcf856bb0b2f14c3eda57d2340f9669d9cc851efc0cc81291f45",
+      "bytes": 17299
+    },
+    {
+      "path": "sources/microsoft__Ontology-Playground/docs/rdf-export-profiles.md",
+      "sha256": "842a5cb08fb3a76ab61e1e2513e5b921dfda5dbfc979fc84ccd1073c04080ca3",
+      "bytes": 11127
+    },
+    {
+      "path": "sources/microsoft__Ontology-Playground/LICENSE",
+      "sha256": "40f011272724ef2ffe657ab17089cda9641050ce84d005ecdf9ff8f678b4c6d8",
+      "bytes": 1075
+    },
+    {
+      "path": "sources/microsoft__Ontology-Playground/package.json",
+      "sha256": "cd653ea0c657489156e016fa9409e9b48f15f08449d487d8bc26ccbf6b1c78f3",
+      "bytes": 2467
+    },
+    {
+      "path": "sources/microsoft__Ontology-Playground/README.md",
+      "sha256": "bdbe81c3128ddebd9520cc11cb7a9b29c92737c794b2694610a08c797c1b14c9",
+      "bytes": 27043
+    },
+    {
+      "path": "sources/microsoft__Ontology-Playground/src/lib/ontologySchema.ts",
+      "sha256": "0e96d0d1f59e8284f14567bab0687122f349c1133ea5a193bf939ff4e26ab5bd",
+      "bytes": 11125
+    },
+    {
+      "path": "sources/microsoft__Ontology-Playground/src/lib/ontologyValidation.ts",
+      "sha256": "d4f2c7ad22ea51b9986fc9e90d21b7b7806ad3052b0ce9cdd17dce3f3fbdcce3",
+      "bytes": 5085
+    },
+    {
+      "path": "sources/NVIDIA__auto-ontology/auto_ontology/server/model_interchange/__pycache__/schemas.cpython-314.pyc",
+      "sha256": "3e46c002d0ce60e200ebacad874127cc7ac69c18ee697e647807ebf8dcf5ba18",
+      "bytes": 8838
+    },
+    {
+      "path": "sources/NVIDIA__auto-ontology/auto_ontology/server/model_interchange/schemas.py",
+      "sha256": "b02856a46559292c30b6b9d12418b6a1cff233868cf35cc0cc5ed814bdefef16",
+      "bytes": 4626
+    },
+    {
+      "path": "sources/NVIDIA__auto-ontology/README.md",
+      "sha256": "6a214ee1099ebefb6cb2801a06f16a2776ba542153e0ad30e0b319d46acec8a0",
+      "bytes": 15592
+    },
+    {
+      "path": "sources/semantica-agi__semantica/README.md",
+      "sha256": "8f8b939880881c1063076a0f203ad598f64d8f1b3b4a11ef4f0f49db97fc2c2a",
+      "bytes": 81811
+    },
+    {
+      "path": "sources/topoteretes__cognee/README.md",
+      "sha256": "09ed65b089ff6883a76554418e84a2478a63f039ab7724ac82ad96bcc6414e91",
+      "bytes": 18487
+    },
+    {
+      "path": "design-sources/lucide/icons/check.svg",
+      "sha256": "0a831a16589b4c471b3465bbb258ba0e622886624918eb909c5494c195f4964a",
+      "bytes": 240
+    },
+    {
+      "path": "design-sources/lucide/icons/chevron-right.svg",
+      "sha256": "0b74682a3a7c87275ac884e67e415a51a13760b3c79b0da9e9546eab9a8efdef",
+      "bytes": 238
+    },
+    {
+      "path": "design-sources/lucide/icons/files.svg",
+      "sha256": "e788e8e5d7954104f69a6d550c2a6e3ba1d2fe4b1c5069c93ef70bd0b71d3faa",
+      "bytes": 445
+    },
+    {
+      "path": "design-sources/lucide/icons/network.svg",
+      "sha256": "a7eb13020fdd14a99c4efedf374539568cfa11030810f94497fc6dedc9ab23a7",
+      "bytes": 446
+    },
+    {
+      "path": "design-sources/lucide/icons/search.svg",
+      "sha256": "d325ed3e3f24d038bcd8d3301410dd61e265bc762aceed1bb70fa53873ca854a",
+      "bytes": 276
+    },
+    {
+      "path": "design-sources/lucide/icons/shield-check.svg",
+      "sha256": "4fe6f5f183a5070fe36b2e5aa64525a2b47a70179a4aec1022e21ff427d3dca0",
+      "bytes": 416
+    },
+    {
+      "path": "design-sources/lucide/icons/triangle-alert.svg",
+      "sha256": "098e9ba98ad32d6c5980a496c91558be3ed99a8561646e5c11463d16ca68503b",
+      "bytes": 346
+    },
+    {
+      "path": "design-sources/lucide/LICENSE",
+      "sha256": "fdcc28746ccdcae999f4c38ac860d1e1e18f52d1a5e85033738918fea12fb6a3",
+      "bytes": 3209
+    },
+    {
+      "path": "design-sources/open-props/LICENSE",
+      "sha256": "d2535a2a1d34d047b19604b6df34bae9a41faaf33ea40694b0cfb9c9f0bfc404",
+      "bytes": 1069
+    },
+    {
+      "path": "design-sources/open-props/src/props.gray.css",
+      "sha256": "c1f518ab4ed903e77742973f74582449564921039b4f2f9555e8f89b628275a7",
+      "bytes": 294
+    },
+    {
+      "path": "design-sources/open-props/src/props.sizes.css",
+      "sha256": "69d48eb4daa8e56e0212be1881a1f43c6f4431de96e08a722dd84ef87a1236e0",
+      "bytes": 1936
+    }
+  ],
+  "probes": [
+    {
+      "scope": "Only the upstream pure validation module, not the app or RDF round-trip",
+      "node": "v24.22.1",
+      "commit": "7bf7acb427424ce68f917fa26f484fb06ca42051",
+      "cases": [
+        {
+          "name": "ASCII entity and string identifier",
+          "errors": [],
+          "passed": true
+        },
+        {
+          "name": "Korean entity name is rejected by Fabric IQ validation",
+          "errors": [
+            {
+              "message": "Entity type name \"공공데이터\" must start with a letter or digit.",
+              "entityId": "dataset"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "name": "Dangling relationship target is rejected",
+          "errors": [
+            {
+              "message": "\"hasOwner\" points to \"missing\" which doesn't exist. Pick a valid target entity.",
+              "relationshipId": "r1"
+            }
+          ],
+          "passed": true
+        },
+        {
+          "name": "Repeated generated property name is rejected",
+          "errors": [
+            {
+              "message": "Property \"datasetId\" is repeated on \"Dataset\". Property names must be unique within an entity.",
+              "entityId": "dataset"
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "scope": "Only upstream Pydantic schema, not server, YAML adapter, SQL or model inference",
+      "commit": "fb496d406acfd34db0af3c5d188080097779021f",
+      "checks": [
+        {
+          "name": "Mixed sample types survive JSON round-trip",
+          "passed": true
+        },
+        {
+          "name": "OSSIE ontology export option accepted",
+          "passed": true
+        },
+        {
+          "name": "Ontology export option rejected for auto_ontology dialect",
+          "passed": true
+        },
+        {
+          "name": "Korean term preserved in model document JSON round-trip",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "fork_created": "https://github.com/SakJaeLim/Ontology-Playground",
+  "scope": "No whole-engine installation, performance benchmark or native LLM Wiki integration claimed."
+}
