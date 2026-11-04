@@ -1,31 +1,53 @@
 # Ontology Review
 
-**Edit a definition. Keep its source. Know when to review it again.**
+**See what needs another review when a business definition changes.**
 
 [한국어](README.ko.md) / English
 
-[Run the demo](#try-it-in-a-few-minutes) · [Connect the editor](CONNECTION.md) · [Watch the walkthroughs](#see-it-work) · [What I built](PROVENANCE.md)
+[Try it](#try-it-in-a-few-minutes) / [Watch the walkthroughs](#see-it-work) / [Development and credits](PROVENANCE.md)
 
-Ontology Review is a local workspace for reviewing changes to data dictionaries and source-bound claims. It keeps the original input, compares it with a proposed definition, and records a human decision against the version that was actually inspected. If that basis changes, the earlier decision stays in history and the current item needs review.
+## The problem
 
-It is intended for data consultants, FDEs and data stewards preparing definitions with a subject-matter expert. The current release is a single-user prototype with synthetic demonstrations. It does not yet measure time saved or accuracy improvements in a customer deployment.
+An **active customer** might mean someone who bought something in the last 90 days, or the last 30 days. The choice changes how people interpret a report.
 
-![Ontology Review comparing the source and proposed definition after a later edit requires review](assets/standalone-review.png)
+Suppose a business owner reviews and approves the 90-day definition. Someone later changes it to 30 days. **The old approval does not mean the new wording was reviewed.** Ontology Review keeps that distinction visible.
 
-## A concrete use case
+| Action | What the tool shows |
+| --- | --- |
+| Review and approve “a customer who purchased in the last 90 days” | The wording that was inspected and the recorded decision. |
+| Change the description to “the last 30 days” | The current wording needs another review. The earlier approval stays in history. |
+| Inspect the change again | Compare the source and proposal, then record a new decision about the current version. |
 
-A data team receives a dictionary describing a `Dataset` as “a collection of data managed for publication.” A reviewer clarifies what the definition includes.
+**A person decides whether 30 or 90 days is right.** The tool records what was reviewed and shows when a later change needs attention. It does not calculate customer counts or update a company database.
 
-1. Import the dictionary and preserve the original file.
-2. Load its definitions into the connected Microsoft editor.
-3. Change an entity or property description and send the draft for review.
-4. Compare the original and proposal, then explicitly accept or reject.
-5. Edit it again. The earlier decision remains, while the current definition requires another review.
-6. Export the exact original together with the separate proposal and bindings.
+The active-customer example explains the intended use. The screens and videos below use a separate bundled synthetic dictionary.
 
-The bundled example contains two fictional terms and three attributes. Its source format was checked against NVIDIA's pinned model schema. The dictionary is the submitted source, not independent proof that a definition is correct.
+## When it helps
+
+This is for data consultants agreeing on terminology with a client, or data stewards maintaining a dictionary: **people who revise definitions and review them repeatedly.** A data dictionary is a file describing what terms and fields mean.
+
+The review screen brings together the original wording, the proposal and earlier decisions. The intended benefit is to **reduce the chance of treating changed wording as already reviewed**. Time savings and customer outcomes have not yet been measured.
+
+A document or spreadsheet may be simpler for a short glossary written once. This release is a prototype for one person working locally. It does not yet provide staff accounts or shared organizational workflows.
+
+## What was built
+
+The project connects an existing editor to a workflow for **keeping the source, comparing a proposal, recording a decision and requiring review after a change**.
+
+- Preserve the imported file and keep edited descriptions separately.
+- Show the source and proposal together and retain earlier decisions.
+- Reassess review status after approved content changes.
+- Provide the local server, tests and demonstrations for that workflow.
+
+The visual editor comes from Microsoft. The input format comes from NVIDIA. **This project's contribution is the connection and review functionality between them.** It runs without LLM Wiki. [Development history and credits](PROVENANCE.md)
+
+The current ontology scope is **descriptions attached to existing terms and properties**. Designing new relationships and structures, or automatically building an ontology from company documents, remains outside this release.
 
 ## See it work
+
+The screen compares the original on the left with the proposal on the right. **‘재검토 필요’ means ‘needs review’:** the current content needs another decision.
+
+![Ontology Review comparing the source and proposed definition after a later edit requires review](assets/standalone-review.png)
 
 **Dictionary editing and review in 20 seconds**
 
@@ -59,6 +81,8 @@ These videos assemble actual browser captures. They are not continuous screen re
 
 ## Try it in a few minutes
 
+**There are two ways to try it.** The commands below execute the example and generate a report of its recorded review steps. To edit descriptions and submit decisions yourself, follow the [live editor guide](CONNECTION.md). Input currently requires NVIDIA's JSON/YAML format; ordinary Excel and PDF files are not directly supported.
+
 The recorded demo needs **Python 3.11+**. It does not need the Microsoft editor, a running LLM Wiki, an API key or a model server. Installation downloads Python dependencies; the demonstration then runs locally.
 
 ```sh
@@ -85,6 +109,9 @@ python3 -m venv .venv
 Open `demo-output/index.html` in a browser, or `index.en.html` for English. The four stages are real stored executions with expected eligible-claim counts of **2 → 1 → 1 → 2**. Buttons inspect those records; they do not edit a live workspace. Use a new output directory for another run.
 
 For **live dictionary editing**, follow the [Windows, macOS and Linux connection guide](CONNECTION.md). It builds a pinned version of the Microsoft fork separately and mounts it on the local review server. Node.js is needed for that editor build.
+
+<details>
+<summary>Developer details: features, commands, limits and checks</summary>
 
 ## What is implemented
 
@@ -141,6 +168,10 @@ python scripts/check_docs.py
 ```
 
 [CI](https://github.com/SakJaeLim/ontology-review/actions/workflows/ci.yml) runs the core tests, demo and package checks on Windows, macOS and Linux with Python 3.11 and 3.14. The actual results and browser scope are recorded in [standalone verification](STANDALONE_VERIFICATION.md); the historical [engine](VERIFICATION.md) and [connection](CONNECTION_VERIFICATION.md) records remain available.
+
+</details>
+
+The core program and installable package are checked in CI on Windows, macOS and Linux. The connected Microsoft editor was exercised in an actual browser on Windows. [Verification record](STANDALONE_VERIFICATION.md)
 
 ## License
 
