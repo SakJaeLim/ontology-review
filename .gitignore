@@ -7,3 +7,7 @@ __pycache__/
 .evidence-review/
 demo-output/
 build/
+dist/
+review-workspace/
+.DS_Store
+Thumbs.db

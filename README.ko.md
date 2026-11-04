@@ -1,96 +1,135 @@
-# LLM Wiki 근거 검토 확장
+# Ontology Review
+
+**설명이 바뀌면, 검토도 다시.**
 
 한국어 / [English](README.md)
 
-문서의 주장과 원문, 온톨로지 규칙을 함께 확인하는 로컬 검토 도구입니다. 예전 승인 기록을 보존하면서 원문이나 규칙이 바뀐 뒤 어떤 위키 페이지를 다시 살펴봐야 하는지 보여줍니다.
+[빠른 실행](#몇-분-안에-실행하기) · [편집기 연결](CONNECTION.md) · [시연 영상](#실제-화면과-영상) · [직접 개발한 부분](PROVENANCE.md)
 
-[nashsu/llm_wiki](https://github.com/nashsu/llm_wiki)를 기반으로 한 [SakJaeLim의 포크](https://github.com/SakJaeLim/llm_wiki)에 추가한 실험적 확장입니다. 데스크톱 앱과 기존 기능은 원저자의 작업입니다. 이번 확장은 별도의 Python 작업 공간에서 실행하며, 앱의 답변이나 기존 승인 기록에 직접 개입하지 않습니다.
+데이터 사전의 설명을 고칠 때 원문과 수정안, 검토 기록을 함께 관리하는 로컬 도구입니다. 가져온 파일은 그대로 보존하고, 검토 당시의 내용에 승인을 연결합니다. 이후 내용이 바뀌면 이전 이력은 남기면서 현재 항목을 재검토 대상으로 표시합니다.
 
-![원문 버전과 규칙 검증, 검토 기록의 관계](assets/architecture.svg)
+고객사 업무 용어를 정리하는 데이터 컨설턴트와 FDE, 데이터 사전 담당자가 업무 전문가와 정의를 확인하는 상황을 대상으로 만들었습니다. 현재는 한 사람이 로컬에서 사용하는 시제품입니다. 실제 고객 현장의 시간 절약이나 정확도 개선 효과는 아직 측정하지 않았습니다.
 
-## 내장 탭에서 확인한 화면
+![원문과 수정안, 재검토 상태를 보여주는 독립판 실제 화면](assets/standalone-review.png)
 
-[![24초 실행 기록 영상 열기](assets/overview.jpg)](assets/walkthrough.mp4)
+## 이런 상황에 씁니다
 
-[영상 보기](assets/walkthrough.mp4). 내장 탭의 실제 화면 6장으로 구성한 24초 기록입니다. HTML에서는 단계 전환과 언어 변경, 주장 검색을 직접 해볼 수 있습니다.
+데이터 사전에 `Dataset`을 “기관이 개방 대상으로 관리하는 데이터 묶음”이라고 적어 두었다고 가정해 보겠습니다. 담당자가 포함 범위를 더 구체적으로 정의하려고 합니다.
+
+1. 데이터 사전을 가져오고 원본을 보존합니다.
+2. 연결된 Microsoft 편집기에서 기존 정의를 불러옵니다.
+3. 개체나 속성 설명을 수정하고 검토로 보냅니다.
+4. 원문과 수정안을 비교한 뒤 승인하거나 반려합니다.
+5. 다시 수정하면 과거 검토 이력은 남고 현재 내용은 재검토 대상으로 바뀝니다.
+6. 원본과 별도의 편집본, 연결 정보를 함께 내보냅니다.
+
+제공하는 예제는 가상의 용어 2개와 속성 3개로 구성했습니다. NVIDIA의 고정된 모델 스키마로 입력 형식을 확인했습니다. 가져온 데이터 사전은 검토 대상의 원문이며, 정의가 옳다는 독립적인 증거는 아닙니다.
+
+## 실제 화면과 영상
+
+| 데이터 사전 편집과 검토 | 원문과 규칙 변경에 따른 재검토 |
+| --- | --- |
+| [![편집 연결 시연 보기](assets/connection-editor.jpg)](assets/connection-walkthrough.mp4) | [![근거 검토 시연 보기](assets/overview.jpg)](assets/walkthrough.mp4) |
+| [20초 시연](assets/connection-walkthrough.mp4): 가져오기, 편집, 승인, 다시 수정하기. | [24초 시연](assets/walkthrough.mp4): 원문 변경, 규칙 위반, 새 검토와 이력 보존. |
+
+두 영상은 실제 브라우저 화면을 캡처해 이어 붙인 기록입니다. 연속 조작을 녹화한 영상은 아닙니다. 이전 확장판에서 찍은 화면에는 당시 이름이 남아 있습니다. 같은 엔진을 이번 독립 저장소로 옮겼습니다. [미디어 설명](MEDIA.md)
 
 <details>
-<summary>근거와 승인 이력, 영어 화면 보기</summary>
+<summary>화면 더 보기</summary>
 
-![현재 인용문과 규칙 검사 결과](assets/evidence.jpg)
-![이전 승인과 새 승인 기록](assets/history.jpg)
-![영어 화면](assets/english.jpg)
+![데이터 사전 가져오기](assets/connection-import.jpg)
+![명시적으로 승인한 정의](assets/connection-approved.jpg)
+![인용문과 로컬 규칙 확인](assets/evidence.jpg)
+![보존된 검토 이력](assets/history.jpg)
+![영어 검사 보고서](assets/english.jpg)
 
 </details>
 
-## 데이터 사전 편집과 검토
+## 몇 분 안에 실행하기
 
-NVIDIA Auto Ontology의 JSON 또는 YAML 파일을 가져와 [Microsoft Ontology Playground 포크](https://github.com/SakJaeLim/Ontology-Playground)의 실제 편집기에서 설명을 수정할 수 있습니다. 원문과 수정안을 비교하고 검토 기록을 남깁니다. 승인 후 다시 수정하면 이전 이력은 남고 현재 내용은 재검토 대상이 됩니다.
-
-편집기 빌드와 로컬 서비스 실행 방법은 [한국어와 영어 연결 안내](CONNECTION.md)에 정리했습니다. 첫 연결은 설명 편집을 지원하며, 화면에 옮기지 않은 원본 정보도 보존합니다. NVIDIA 추론 서버를 배포하는 구성은 아닙니다.
-
-## 디자인과 조사 자료
-
-검토 화면에는 [Open Props](https://github.com/argyleink/open-props)의 색상과 간격, [Lucide](https://github.com/lucide-icons/lucide)의 아이콘 두 개를 사용했습니다. 외부 서버를 요청하지 않으며, 내보낸 HTML에도 라이선스 전문이 포함됩니다. [출처와 사용 조건](THIRD_PARTY_NOTICES.md)을 확인할 수 있습니다.
-
-[29개 저장소 조사](research/ontology-ecosystem-review.md)를 통해 편집, 데이터 사전, 검색, 변경 영향 분석을 검토한 뒤 위의 연결을 구현했습니다. 조사 문서는 구현 전의 기록이며, [비교표](research/ontology-ecosystem-repositories.csv)에 당시 별 수와 고정 커밋, 확인한 범위를 담았습니다.
-
-## 데모 실행
-
-Python 3.11 이상이 필요합니다. 이 폴더에서 실행합니다.
+기록형 데모에는 **Python 3.11 이상**이 필요합니다. Microsoft 편집기나 실행 중인 LLM Wiki, API 키와 모델 서버는 필요하지 않습니다. 설치할 때 Python 패키지를 내려받으며, 데모 자체는 로컬에서 실행됩니다.
 
 ```sh
-python -m pip install ".[test]"
-python demo.py --output demo-output
-python -m pytest -q
+git clone https://github.com/SakJaeLim/ontology-review.git
+cd ontology-review
 ```
 
-가상의 한국어 문서를 실제로 수정하고 규칙을 검사한 뒤 검토 이력을 HTML로 내보냅니다. LLM이나 API 키, 유료 서비스는 필요하지 않습니다. 처음 패키지를 설치할 때는 인터넷 연결이 필요하고, 이후 데모는 로컬에서 실행됩니다.
+**Windows PowerShell**
 
-출력 위치는 새 폴더나 빈 폴더를 지정하세요. 기존 실행 결과를 덮어쓰지 않습니다. `demo-output/index.html`을 브라우저로 열면 단계별 결과를 볼 수 있습니다. 화면의 단계 버튼은 저장된 실행 기록을 전환합니다.
+```powershell
+python -m venv .venv
+.venv\Scripts\python -m pip install .
+.venv\Scripts\python demo.py --output demo-output
+```
 
-| 단계 | 바뀌는 내용 | 확인할 결과 |
-| --- | --- | --- |
-| 최초 검토 | 서로 다른 문서의 주장 두 개를 데모 검토자가 승인 | 두 주장 모두 현재 사용 가능 |
-| 원문 수정 | 보관기간 원문을 30일에서 90일로 변경 | 기존 30일 주장은 재검토 필요 |
-| 주장 수정 | 주장과 인용문을 90일로 수정하고 상한은 60일 유지 | 인용은 일치하지만 규칙 위반 |
-| 규칙 수정 후 재검토 | 데모 상한을 120일로 바꾸고 새 검토 기록 추가 | 새 주장 사용 가능, 이전 기록 보존 |
+**macOS와 Linux**
 
-관련 없는 담당팀 주장은 계속 사용 가능한 상태로 남습니다. 보관기간 수치는 동작 설명용 예시입니다.
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install .
+.venv/bin/python demo.py --output demo-output
+```
 
-## 내 작업 공간 검사
+브라우저에서 `demo-output/index.html`을 여세요. 영어 화면은 `index.en.html`입니다. 네 단계는 실제 실행을 저장한 결과이며, 재사용 가능한 주장 수는 **2 → 1 → 1 → 2**로 바뀝니다. 화면의 버튼은 저장된 기록을 보여줍니다. 다시 실행하려면 새 출력 폴더를 지정하세요.
 
-데모나 `examples/`의 구조를 참고해 `workspace.json`에 주장, 원문의 정확한 인용 구간, 로컬 `.ttl` 규칙 파일과 관련 위키 페이지를 등록합니다.
+**직접 편집하고 검토하려면** [운영체제별 편집기 연결 안내](CONNECTION.md)를 따라 실행하세요. Microsoft 편집기 포크의 고정 버전을 별도로 빌드하고, 로컬 검토 서버에 연결합니다. 이때는 Node.js도 필요합니다.
+
+## 구현한 기능
+
+| 구성 | 하는 일 |
+| --- | --- |
+| 데이터 사전 어댑터 | NVIDIA Auto Ontology JSON과 안전하게 읽을 수 있는 YAML을 가져오고 정확한 원문과 해시를 보존합니다. |
+| 편집기 연결 | 기존 용어와 속성을 Microsoft Designer에 연결하고, 저장 시 작업 공간 버전을 확인합니다. |
+| 검토 엔진 | 확인한 내용에 명시적 결정을 연결합니다. 관찰된 변경과 되돌리기도 새 검토가 필요합니다. |
+| 로컬 규칙 | 정확한 인용문과 제한된 비실행형 SHACL 규칙을 검사합니다. |
+| 검토 이력 | 관찰과 결정을 SQLite에 기록하고 재시작 후에도 유지합니다. |
+| 검사 보고서 | 한국어와 영어, 검색, 근거 위치, 검토 이력을 담은 독립 HTML을 만듭니다. |
+| 내보내기 | 원본과 수정안, 연결 정보를 함께 보관합니다. NVIDIA에 자동 재입력하는 모델 파일은 아닙니다. |
+
+직접 편집하는 작업 화면은 현재 한국어이며, 검사 보고서와 안내 문서는 한국어와 영어를 지원합니다.
+
+## 직접 준비한 자료 검사하기
+
+[가상 예제의 manifest](examples/synthetic/workspace.json)를 참고해 주장의 인용문 줄 위치, 로컬 Turtle 규칙 파일, 영향을 받는 페이지 이름을 선언합니다.
 
 ```sh
 python -m evidence_wiki inspect PATH_TO_WORKSPACE --json inspection.json --html inspection.html
 python -m evidence_wiki review PATH_TO_WORKSPACE CLAIM_ID accept --basis BASIS_FROM_INSPECTION --actor REVIEWER_NAME
 ```
 
-출력 경로는 해당 작업 공간을 기준으로 지정합니다. 승인할 때 입력 파일을 다시 확인하므로 오래된 검사 결과로 바뀐 내용을 승인할 수 없습니다. 원문 대조나 규칙 검사에 실패한 주장은 승인되지 않습니다. 검토자 이름은 로컬 기록용이며 본인 인증 기능은 아닙니다.
+만든 가상환경의 Python을 사용하세요. 설치되는 `ontology-review` 명령도 같은 기능입니다. 기존 스크립트를 위해 `evidence-wiki` 명령과 `evidence_wiki` 모듈 이름을 유지했습니다.
 
-factlog의 7열 CSV는 검토 전 초안으로 가져올 수 있습니다.
+factlog CSV 가져오기는 미검토 초안을 만듭니다. 기존 파일의 “accepted” 값을 이 도구의 근거가 연결된 승인으로 바꾸지는 않습니다. [상태 모델과 입력 범위](DESIGN.md)
+
+## 직접 개발한 부분과 원본의 역할
+
+이 저장소에서 개발한 부분은 Python 검토 엔진, 데이터 사전 어댑터, 로컬 서버, 검사 화면, 테스트와 가상 예제입니다. **시각적 온톨로지 편집기는 Microsoft의 작업**입니다. [편집기 포크](https://github.com/SakJaeLim/Ontology-Playground)에 검토 서버 연결 패널과 초안 연결 처리를 추가했습니다.
+
+처음에는 LLM Wiki 포크의 `extensions/evidence-review`에서 개발했습니다. 해당 폴더의 기능 커밋 3개를 Git subtree로 분리해 이력을 이어받았습니다. **현재 도구를 실행하는 데 LLM Wiki는 필요하지 않습니다.** 기본 위키의 승인이나 답변을 가로채는 기능은 없습니다. NVIDIA에서는 데이터 사전 형식을 활용하며 추론 서버를 배포하지 않습니다.
+
+[기여 범위와 원본 버전, 출처](PROVENANCE.md)를 따로 정리했습니다. 독립 저장소 공개가 원본 프로젝트에 PR이 승인됐다는 뜻은 아닙니다.
+
+## 현재 지원 범위
+
+- 기존 개체와 속성의 설명, 온톨로지 제목과 설명을 편집합니다. 이름과 구조 변경, 연결된 속성의 순서 변경은 거부합니다.
+- 작업 공간 하나에 서버 프로세스 하나를 사용합니다. 파일은 최대 1 MiB, 검토할 정의는 최대 200개입니다.
+- 검토자 이름은 기록용 표시입니다. 사용자 인증, 조직별 접근 권한, 변조 방지 감사 저장소는 아직 없습니다.
+- 원문 일치와 규칙 준수 여부를 확인합니다. 내용의 사실성이나 의미의 동등성은 검토자가 판단합니다.
+- 변경은 검사할 때 관찰합니다. 검사 사이에 바뀌었다 되돌아온 내용은 탐지하지 못합니다. 파일 단위로 보수적으로 재검토합니다.
+- Foundry 연결, 기업 데이터 파이프라인, 위키 답변 차단, 의미 기반 영향 분석은 현재 구현 범위에 없습니다.
+
+## 검증 재현
 
 ```sh
-python -m evidence_wiki import-factlog PATH_TO_WORKSPACE claims.csv --out drafts.json
+python -m pip install ".[test]"
+python -m pytest -q
+python -m pip wheel . --no-deps --wheel-dir dist
+python scripts/check_wheel.py dist
+python scripts/check_docs.py
 ```
 
-기존 CSV의 승인 상태는 새 승인으로 옮기지 않습니다. 정확한 인용문과 적용할 규칙을 연결한 후 다시 검토해야 합니다.
+[CI](https://github.com/SakJaeLim/ontology-review/actions/workflows/ci.yml)는 Windows, macOS, Linux에서 Python 3.11과 3.14로 핵심 테스트, 데모, 패키지 검사를 실행합니다. 실제 결과와 브라우저 확인 범위는 [독립판 검증 기록](STANDALONE_VERIFICATION.md)에 남깁니다. 과거의 [엔진 검사](VERIFICATION.md)와 [편집기 연결 검사](CONNECTION_VERIFICATION.md) 기록도 보존했습니다.
 
-## 확인하는 범위
+## 라이선스
 
-- 원문 전체의 내용 해시와 관측한 버전.
-- 지정한 줄 구간의 원문과 인용문 일치 여부.
-- `pyshacl`로 검사하는 제한된 범위의 로컬 SHACL 속성 규칙.
-- 검토 당시 근거와 현재 근거의 차이, 누락된 파일, 관련 위키 페이지.
-- 작업 공간 밖의 경로와 실행 기능을 포함한 규칙 차단.
-
-규칙을 통과했다고 원문의 사실성이 입증되는 것은 아닙니다. 파일의 일부만 바뀌어도 그 파일에 연결된 주장을 보수적으로 재검토 대상으로 잡습니다. 의미를 해석해 변경 영향을 추론하는 기능은 아직 포함하지 않습니다.
-
-## 다음 개발 범위
-
-HTML은 검사 당시의 기록입니다. 실시간 감시, 검토자 인증, 위변조 방지 기능은 없습니다. 검사 사이에 내용이 바뀌었다가 되돌아온 경우에는 감지할 수 없습니다. 등록된 의존관계만 검사합니다.
-
-LLM Wiki 기본 검토 화면과의 연결, 답변 직전 검증, SHACL 지원 확대, [OntoRipple](https://github.com/oeg-upm/OntoRipple) 연결은 후속 개발 대상입니다. 이번 작업에서 원본 저장소에 반영된 기여가 있다고 주장하지 않습니다.
-
-실제로 실행한 검사는 [검증 기록](VERIFICATION.md)에, 상태 모델과 선행 프로젝트의 역할은 [설계 문서](DESIGN.md)에 정리했습니다. 확장도 저장소의 [GPL-3.0 라이선스](../../LICENSE)를 따릅니다.
+[GPL-3.0-only](LICENSE)를 유지합니다. 이전 고지와 출처는 [NOTICE.md](NOTICE.md)에 있습니다. Open Props와 Lucide의 별도 라이선스는 [외부 자원 고지](THIRD_PARTY_NOTICES.md)를 확인하세요. Microsoft 편집기는 자체 라이선스로 별도 빌드합니다.

@@ -1,0 +1,65 @@
+{
+  "capture_note": "Actual synthetic browser captures; MP4 files assemble captured states.",
+  "files": [
+    {
+      "path": "assets/architecture.svg",
+      "bytes": 3933,
+      "sha256": "401453d1bd4a68f143f320df0bb08dc97dc488d07f10a3622629e714ff2bc37e"
+    },
+    {
+      "path": "assets/connection-approved.jpg",
+      "bytes": 67203,
+      "sha256": "712f66de9d663362bb06823d4d8276c26e172ef29ee505cc6a47a327298e60a8"
+    },
+    {
+      "path": "assets/connection-editor.jpg",
+      "bytes": 70093,
+      "sha256": "eabf49ec014ebf1af319ed7630ba439c5a33c313ab92bfde7a1f250635f6ec3c"
+    },
+    {
+      "path": "assets/connection-import.jpg",
+      "bytes": 67284,
+      "sha256": "03044a2302ffd2f1d431d515f66f1d2f3b6467cb29d96b61ae9eb60219e655a5"
+    },
+    {
+      "path": "assets/connection-recheck.jpg",
+      "bytes": 66486,
+      "sha256": "097d71db1479cc99fdb7864750bd847bae13456efa2948993bafd9b811e451da"
+    },
+    {
+      "path": "assets/connection-walkthrough.mp4",
+      "bytes": 264600,
+      "sha256": "7fca481fdd714ef7ab5d7064e10087f4b1740d32aa385c851633db9af65f0f52"
+    },
+    {
+      "path": "assets/english.jpg",
+      "bytes": 64341,
+      "sha256": "ab0bbfc61deb5dc864c6034bf6484c7d309529cba4641c4a334318807676b7a1"
+    },
+    {
+      "path": "assets/evidence.jpg",
+      "bytes": 54633,
+      "sha256": "aa149da5f11fc876aedc12b8f36b8126aa0164c5947164df2beb2392fa6657ef"
+    },
+    {
+      "path": "assets/history.jpg",
+      "bytes": 53973,
+      "sha256": "7352862e1565057bd26870f3d59d56f760c52a45dcb15e39502fde85eaa7b075"
+    },
+    {
+      "path": "assets/overview.jpg",
+      "bytes": 58212,
+      "sha256": "a912a0595a73e099b806fdf3f1a8a323c650c8a05e1644b8b678174f5dea60c5"
+    },
+    {
+      "path": "assets/standalone-review.png",
+      "bytes": 90154,
+      "sha256": "be8eee9bf7a926b5ef177938ef7eee2191addda1220846b35f1bd83fb7913582"
+    },
+    {
+      "path": "assets/walkthrough.mp4",
+      "bytes": 312991,
+      "sha256": "7bd3d1a17dd61193ae039d9ae3c327f0dc7bf8b15da9716880fd21e35324bb5e"
+    }
+  ]
+}

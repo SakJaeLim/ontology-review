@@ -3,18 +3,28 @@ requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "llm-wiki-evidence-review"
-version = "0.1.0"
-description = "An offline source revision and SHACL review sidecar for LLM Wiki"
+name = "ontology-review"
+version = "0.2.0"
+description = "Review data dictionary changes against preserved sources and recorded decisions"
+readme = "README.md"
 requires-python = ">=3.11"
 license = "GPL-3.0-only"
+license-files = ["LICENSE", "NOTICE.md", "evidence_wiki/design/LICENSE.*"]
+authors = [{name = "Seokje Lim"}]
+keywords = ["ontology", "data-dictionary", "evidence", "review", "SHACL"]
 dependencies = ["rdflib==7.6.0", "pyshacl==0.40.1", "PyYAML==6.0.3"]
 
 [project.optional-dependencies]
 test = ["pytest>=8,<10"]
 
 [project.scripts]
+ontology-review = "evidence_wiki.__main__:main"
 evidence-wiki = "evidence_wiki.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/SakJaeLim/ontology-review"
+Documentation = "https://github.com/SakJaeLim/ontology-review#readme"
+Issues = "https://github.com/SakJaeLim/ontology-review/issues"
 
 [tool.setuptools.packages.find]
 include = ["evidence_wiki*"]

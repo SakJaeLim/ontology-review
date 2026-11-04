@@ -55,7 +55,7 @@ __WORKBENCH_STYLE__
 </head>
 <body>
 <header class="report-header"><div class="shell">
-<div class="masthead"><div class="identity"><span class="identity-icon" aria-hidden="true">__FILES_ICON__</span><div><p class="brand">LLM WIKI</p><h1 id="hero-title"></h1></div></div><nav class="languages" aria-label="Language"><button id="lang-ko" lang="ko">한국어</button><button id="lang-en" lang="en">English</button></nav></div>
+<div class="masthead"><div class="identity"><span class="identity-icon" aria-hidden="true">__FILES_ICON__</span><div><p class="brand">ONTOLOGY REVIEW</p><h1 id="hero-title"></h1></div></div><nav class="languages" aria-label="Language"><button id="lang-ko" lang="ko">한국어</button><button id="lang-en" lang="en">English</button></nav></div>
 <div class="report-meta" id="hero-meta"></div>
 </div></header>
 <main class="shell workspace">
@@ -65,7 +65,7 @@ __WORKBENCH_STYLE__
 <div class="toolbar"><label class="search-field"><span class="field-label" data-i18n="searchLabel"></span><span class="search-input"><span class="search-icon" aria-hidden="true">__SEARCH_ICON__</span><input type="search" id="search" autocomplete="off"></span></label><label class="filter-field"><span class="field-label" data-i18n="filterLabel"></span><select id="filter"></select></label></div>
 <div class="inspector"><nav class="claim-list" id="claims" aria-label="Claims"></nav><article class="detail" id="detail" aria-live="polite"></article></div></section>
 <div class="bottom"><section class="bottom-card"><h3 data-i18n="affectedPages"></h3><div id="affected-pages"></div></section><section class="bottom-card"><h3 data-i18n="limitations"></h3><div id="limitations"></div></section></div>
-<footer class="footer"><span>LLM WIKI EVIDENCE REVIEW</span><span data-i18n="footer"></span></footer>
+<footer class="footer"><span>ONTOLOGY REVIEW</span><span data-i18n="footer"></span></footer>
 </main>
 <noscript>This report needs JavaScript to display its embedded inspection data. It does not contact a server.</noscript>
 <template id="third-party-notices"><pre>__THIRD_PARTY_NOTICES__</pre></template>

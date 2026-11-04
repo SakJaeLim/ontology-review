@@ -44,7 +44,7 @@ The ecosystem review ran four Microsoft validation-module cases and four NVIDIA 
 
 ## Repeat the checks
 
-From `extensions/evidence-review`:
+From the standalone repository root (historically `extensions/evidence-review`):
 
 ```sh
 python -m pip install ".[test]"

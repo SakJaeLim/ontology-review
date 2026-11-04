@@ -6,7 +6,7 @@
 
 An approval records a decision about the evidence available at that time. A file at the same path can later contain different text. The historical decision should remain visible, while the current claim needs another review.
 
-This extension owns a separate workspace and review history. It does not alter LLM Wiki's native review store or answer pipeline.
+Ontology Review owns its workspace and review history. It runs independently of LLM Wiki and does not alter the desktop application's native review store or answer pipeline.
 
 ## State and ownership
 
@@ -40,7 +40,7 @@ The standalone JSON inspection preserves Python integer values. The HTML display
 - Remote resources, imports, SPARQL constraints and JavaScript rules are outside this extension's input contract.
 - No native answer guard, document parser, automatic ontology induction or OntoRipple runtime integration is included.
 
-## Why a separate extension first
+## Why it began as a separate extension
 
 The upstream factlog reproduction used its actual merge and compilation commands with synthetic input. A source changed from 30 to 90 days at the same path; the prior 30-day accepted fact remained in the compiled input. The reproduction did not run an LLM or a Datalog answer query, so it does not establish that every downstream answer is wrong.
 
@@ -48,7 +48,7 @@ Changing one merge condition would not cover independent readers of compiled acc
 
 ## Upstream credit and contribution targets
 
-[nashsu/llm_wiki](https://github.com/nashsu/llm_wiki) supplies the desktop wiki that this fork extends. Its existing source traceability and asynchronous review features remain upstream work. This Python extension is new work in the fork and follows the repository's GPL-3.0 license.
+[nashsu/llm_wiki](https://github.com/nashsu/llm_wiki) is the original desktop wiki. Its source traceability and asynchronous review features remain upstream work. The Python component began in a fork and now has its own repository, retaining GPL-3.0-only. The desktop application is not a runtime dependency. See [provenance](PROVENANCE.md) for the extracted history and exact contribution boundaries.
 
 [semantic-reasoning/factlog](https://github.com/semantic-reasoning/factlog) informed the source-version boundary. No claim of a merged upstream fix is made.
 
