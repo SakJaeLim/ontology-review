@@ -12,11 +12,7 @@ An **active customer** might mean someone who bought something in the last 90 da
 
 Suppose a business owner reviews and approves the 90-day definition. Someone later changes it to 30 days. **The old approval does not mean the new wording was reviewed.** Ontology Review keeps that distinction visible.
 
-| Action | What the tool shows |
-| --- | --- |
-| Review and approve “a customer who purchased in the last 90 days” | The wording that was inspected and the recorded decision. |
-| Change the description to “the last 30 days” | The current wording needs another review. The earlier approval stays in history. |
-| Inspect the change again | Compare the source and proposal, then record a new decision about the current version. |
+![Review flow: approve an active-customer definition based on purchases within 90 days, change it to 30 days, then review the source and proposal again. A person records a new decision; the earlier approval remains in history.](assets/review-flow.png)
 
 **A person decides whether 30 or 90 days is right.** The tool records what was reviewed and shows when a later change needs attention. It does not calculate customer counts or update a company database.
 
@@ -42,6 +38,10 @@ The project connects an existing editor to a workflow for **keeping the source, 
 The visual editor comes from Microsoft. The input format comes from NVIDIA. **This project's contribution is the connection and review functionality between them.** It runs without LLM Wiki. [Development history and credits](PROVENANCE.md)
 
 The current ontology scope is **descriptions attached to existing terms and properties**. Designing new relationships and structures, or automatically building an ontology from company documents, remains outside this release.
+
+![System architecture: import a local NVIDIA-format JSON or YAML dictionary into Ontology Review, exchange drafts with the Microsoft editor, and use the project's server and review UI to preserve sources, compare proposals and record review status. Outputs are local files, SQLite history and an HTML report. All components run on one local PC.](assets/system-architecture.png)
+
+The central teal area is this project's contribution. The NVIDIA label identifies the input file format; it is not a connection to a deployed NVIDIA service.
 
 ## See it work
 

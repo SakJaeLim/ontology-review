@@ -1,5 +1,5 @@
 {
-  "capture_note": "Actual synthetic browser captures; MP4 files assemble captured states.",
+  "capture_note": "Interface screenshots use synthetic data; MP4 files assemble captured states. The review-flow and system-architecture PNG files are generated explanatory diagrams, not screenshots.",
   "files": [
     {
       "path": "assets/architecture.svg",
@@ -60,6 +60,16 @@
       "path": "assets/walkthrough.mp4",
       "bytes": 312991,
       "sha256": "7bd3d1a17dd61193ae039d9ae3c327f0dc7bf8b15da9716880fd21e35324bb5e"
+    },
+    {
+      "path": "assets/review-flow.png",
+      "bytes": 1461138,
+      "sha256": "81026e35d07c694cc5095fa9402dde48442a4dff54b32bfa1b4ba9a3a66abb16"
+    },
+    {
+      "path": "assets/system-architecture.png",
+      "bytes": 1545007,
+      "sha256": "141403a17f1c3e04ab40a0834e44396b3de7509f2ae4eb2a7e77301e81341be5"
     }
   ]
 }
