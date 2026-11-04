@@ -4,7 +4,7 @@
 
 The standalone Python service mounts a separately built Microsoft Ontology Playground fork. Both pages share the same loopback origin. LLM Wiki and NVIDIA inference services are not required.
 
-Requirements: Python 3.11+, Git, Node.js 20.19+ and npm. The pinned editor also supports later compatible Node versions; the recorded Windows build used Node 24. Build commands need network access. The running synthetic workflow needs no API key.
+Requirements: Python 3.11+, Git, npm, and Node.js 20.19+ within the 20.x line or Node.js 22.12+. This follows the pinned editor's Vite engine range, `^20.19.0 || >=22.12.0`; the recorded Windows build used Node 24. Build commands need network access. The running synthetic workflow needs no API key.
 
 The commands below start inside your `ontology-review` checkout. Build the editor once. The pinned commit includes the connection panel; the upstream Microsoft demo does not include this fork's integration.
 

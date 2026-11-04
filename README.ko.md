@@ -27,10 +27,22 @@
 
 ## 실제 화면과 영상
 
-| 데이터 사전 편집과 검토 | 원문과 규칙 변경에 따른 재검토 |
-| --- | --- |
-| [![편집 연결 시연 보기](assets/connection-editor.jpg)](assets/connection-walkthrough.mp4) | [![근거 검토 시연 보기](assets/overview.jpg)](assets/walkthrough.mp4) |
-| [20초 시연](assets/connection-walkthrough.mp4): 가져오기, 편집, 승인, 다시 수정하기. | [24초 시연](assets/walkthrough.mp4): 원문 변경, 규칙 위반, 새 검토와 이력 보존. |
+**데이터 사전 편집부터 재검토까지, 20초 시연**
+
+사전을 가져와 Microsoft Designer에서 편집하고 승인합니다. 다시 수정하면 재검토 대상으로 바뀝니다.
+
+https://github.com/user-attachments/assets/a4a60191-5f28-4309-bd0a-af84d0a279a1
+
+[MP4 내려받기](assets/connection-walkthrough.mp4)
+
+<details>
+<summary>원문과 규칙이 바뀌었을 때의 처리 보기 (24초)</summary>
+
+https://github.com/user-attachments/assets/6e8241bc-d95f-42e9-82f7-452eb29e97d0
+
+[MP4 내려받기](assets/walkthrough.mp4). 과거 결정은 이력에 남고, 원문 변경이나 규칙 위반은 새 검토가 필요합니다.
+
+</details>
 
 두 영상은 실제 브라우저 화면을 캡처해 이어 붙인 기록입니다. 연속 조작을 녹화한 영상은 아닙니다. 이전 확장판에서 찍은 화면에는 당시 이름이 남아 있습니다. 같은 엔진을 이번 독립 저장소로 옮겼습니다. [미디어 설명](MEDIA.md)
 

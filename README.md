@@ -27,10 +27,22 @@ The bundled example contains two fictional terms and three attributes. Its sourc
 
 ## See it work
 
-| Live dictionary workflow | Source and rule changes |
-| --- | --- |
-| [![Open the dictionary editing walkthrough](assets/connection-editor.jpg)](assets/connection-walkthrough.mp4) | [![Open the evidence review walkthrough](assets/overview.jpg)](assets/walkthrough.mp4) |
-| [20-second walkthrough](assets/connection-walkthrough.mp4): import, edit, review, edit again. | [24-second walkthrough](assets/walkthrough.mp4): source revision, rule failure, new review and retained history. |
+**Dictionary editing and review in 20 seconds**
+
+Import, edit in Microsoft Designer, review, then edit again to see the decision become stale.
+
+https://github.com/user-attachments/assets/a4a60191-5f28-4309-bd0a-af84d0a279a1
+
+[Download the MP4](assets/connection-walkthrough.mp4)
+
+<details>
+<summary>Watch source and rule changes trigger a new review (24 seconds)</summary>
+
+https://github.com/user-attachments/assets/6e8241bc-d95f-42e9-82f7-452eb29e97d0
+
+[Download the MP4](assets/walkthrough.mp4). The earlier decision stays in history while a changed source or failed rule requires another review.
+
+</details>
 
 These videos assemble actual browser captures. They are not continuous screen recordings. Captures from the earlier extension retain its original branding; the same engine now lives in this independent repository. [Media details](MEDIA.md).
 
