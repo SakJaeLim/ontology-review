@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>온톨로지 검토</title>
+  <link rel="stylesheet" href="/assets/open-props.css">
+  <link rel="stylesheet" href="/assets/workbench.css">
+  <script src="/assets/workbench.js" defer></script>
+</head>
+<body>
+<header><div class="shell masthead"><div class="identity"><img src="/assets/files.svg" alt="" width="28" height="28"><div><small>LLM WIKI</small><h1>온톨로지 검토</h1></div></div><button id="refresh">새로 확인</button></div></header>
+<main class="shell">
+  <p class="intro">데이터 사전의 정의를 편집하고, 원문과 비교한 뒤 검토 기록을 남깁니다.</p>
+  <nav class="steps" aria-label="작업 흐름"><a href="#import">1 데이터 사전</a><a id="editor" href="/editor/#/designer">2 편집기</a><a href="#review">3 근거 검토</a></nav>
+  <p id="message" role="status" aria-live="polite"></p>
+  <section id="import" class="import-row" aria-labelledby="import-title">
+    <div><h2 id="import-title">NVIDIA 데이터 사전</h2><p class="muted">Auto Ontology의 기본 모델 JSON 또는 YAML 파일. 최대 1 MiB.</p><p class="muted">원본을 바꾸어 가져오면 편집 초안을 새로 만들고 이전 승인은 다시 검토합니다.</p></div>
+    <div class="import-controls"><label for="dictionary-file">파일 선택</label><input id="dictionary-file" type="file" accept=".json,.yaml,.yml,application/json,text/yaml"><button id="upload">선택한 파일 가져오기</button><button id="example" class="quiet">합성 예제 불러오기</button></div>
+  </section>
+  <section class="source-row" id="source-info" hidden aria-label="연결한 원본"></section>
+  <section id="review" aria-labelledby="review-title">
+    <div class="section-line"><div><h2 id="review-title">검토할 정의</h2><p class="muted">형식 검사는 설명의 구조를 확인합니다. 원문과 의미가 같은지는 검토자가 판단해야 합니다.</p></div><span id="counts"></span></div>
+    <div class="tools"><label>정의 검색<input id="search" type="search" placeholder="이름 또는 설명 검색"></label><label>검토자<input id="actor" type="text" maxlength="200" placeholder="기록에 남길 이름"></label><a id="report" href="/report" target="_blank" rel="noopener">전체 검사 보고서</a><button id="export" class="quiet">원본과 편집본 내보내기</button></div>
+    <div class="inspector"><nav id="claims" aria-label="검토할 정의"></nav><article id="detail"><p class="muted">데이터 사전을 가져오면 검토할 정의가 표시됩니다.</p></article></div>
+  </section>
+  <details class="scope"><summary>지원 범위와 보존한 정보</summary><p>원본은 그대로 보존합니다. 현재 연결에서는 기존 개체와 속성의 설명, 온톨로지 제목과 소개를 수정할 수 있습니다. 구조와 매핑 변경은 지원하지 않습니다.</p><p>이 검토는 독립된 로컬 도구의 기록입니다. NVIDIA 서버나 Microsoft Fabric에 변경을 전송하지 않으며, LLM Wiki의 답변을 차단하지 않습니다.</p><ul id="notices"></ul></details>
+  <footer>이 컴퓨터의 작업 공간에서 실행합니다. 검토자 이름은 본인 인증을 의미하지 않습니다.<span><a href="/assets/LICENSE.open-props">Open Props 라이선스</a><a href="/assets/LICENSE.lucide">Lucide 라이선스</a></span></footer>
+</main>
+</body>
+</html>

@@ -23,11 +23,17 @@ This is an experimental extension in [SakJaeLim's LLM Wiki fork](https://github.
 
 </details>
 
-## Design and integration candidates
+## Live dictionary editing and review
+
+Import a native NVIDIA Auto Ontology JSON/YAML export, edit its descriptions in the real [Microsoft Ontology Playground fork](https://github.com/SakJaeLim/Ontology-Playground), and compare the proposal with the preserved original before recording a review. A later edit makes the old approval require review again while keeping its history.
+
+See the [bilingual connection guide](CONNECTION.md) for building the editor and running the loopback service. This adapter supports description edits and preserves unprojected source fields; it does not deploy NVIDIA's inference server.
+
+## Design and research
 
 The compact report uses pinned [Open Props](https://github.com/argyleink/open-props) gray and spacing tokens and two [Lucide](https://github.com/lucide-icons/lucide) icons. All resources and license texts are included in the exported HTML. See [third-party notices](THIRD_PARTY_NOTICES.md).
 
-A [29-repository review](research/ontology-ecosystem-review.md) separates ontology authoring, semantic data catalogs, retrieval and change analysis. Microsoft Ontology Playground is a visual-authoring candidate; NVIDIA Auto Ontology is a data-dictionary adapter candidate. Neither engine is integrated here. The [repository table](research/ontology-ecosystem-repositories.csv) records stars, pinned commits and inspection depth.
+A [29-repository review](research/ontology-ecosystem-review.md) separates ontology authoring, semantic data catalogs, retrieval and change analysis. It informed the live Microsoft editor and NVIDIA dictionary adapter described above. The research record predates this integration; its [repository table](research/ontology-ecosystem-repositories.csv) records stars, pinned commits and inspection depth at that time.
 
 ## Run the recorded demo
 

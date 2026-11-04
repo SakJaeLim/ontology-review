@@ -1,0 +1,27 @@
+{
+  "data_layer": {
+    "databases": [{"id": "demo-db", "dialect": "sqlite", "schemas": [{"id": "demo-schema", "name": "main", "database_name": "synthetic", "tables": [
+      {"id": "table-dataset", "name": "datasets", "description": "합성 예제 데이터 목록", "pk": ["dataset_id"], "type": "table", "columns": [
+        {"id": "column-dataset-id", "name": "dataset_id", "type": "INTEGER", "description": "가상 데이터 식별자", "sample_values": [1, 2], "is_nullable": false, "is_unique": true},
+        {"id": "column-dataset-title", "name": "title", "type": "TEXT", "description": "가상 데이터 이름", "sample_values": [], "is_nullable": false, "is_unique": false}
+      ]},
+      {"id": "table-organization", "name": "organizations", "description": "합성 예제 관리 조직", "pk": ["organization_id"], "type": "table", "columns": [
+        {"id": "column-org-id", "name": "organization_id", "type": "INTEGER", "description": "가상 조직 식별자", "sample_values": [10], "is_nullable": false, "is_unique": true}
+      ]}
+    ]}]}],
+    "foreign_keys": [], "joins": []
+  },
+  "semantic_layer": {
+    "terms": [
+      {"id": "term-dataset", "name": "Dataset", "description": "기관이 개방 대상으로 관리하는 데이터 묶음입니다. 이 내용은 합성 예제입니다.", "represents": ["table-dataset"], "columns_attributes": [
+        {"id": "attribute-dataset-id", "name": "datasetId", "description": "합성 데이터 묶음을 구별하는 번호입니다.", "column_id": "column-dataset-id"},
+        {"id": "attribute-dataset-title", "name": "title", "description": "합성 데이터 묶음의 이름입니다.", "column_id": "column-dataset-title"}
+      ]},
+      {"id": "term-organization", "name": "Organization", "description": "데이터를 관리하는 가상의 조직입니다.", "represents": ["table-organization"], "columns_attributes": [
+        {"id": "attribute-org-id", "name": "organizationId", "description": "합성 조직을 구별하는 번호입니다.", "column_id": "column-org-id"}
+      ]}
+    ],
+    "semantic_fks": [], "sql_attributes": {"manual": [], "table": [], "sql": [], "bridge_table": []}, "custom_analyses": []
+  },
+  "zones": []
+}

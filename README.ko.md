@@ -23,11 +23,17 @@
 
 </details>
 
-## 디자인과 연결 후보
+## 데이터 사전 편집과 검토
+
+NVIDIA Auto Ontology의 JSON 또는 YAML 파일을 가져와 [Microsoft Ontology Playground 포크](https://github.com/SakJaeLim/Ontology-Playground)의 실제 편집기에서 설명을 수정할 수 있습니다. 원문과 수정안을 비교하고 검토 기록을 남깁니다. 승인 후 다시 수정하면 이전 이력은 남고 현재 내용은 재검토 대상이 됩니다.
+
+편집기 빌드와 로컬 서비스 실행 방법은 [한국어와 영어 연결 안내](CONNECTION.md)에 정리했습니다. 첫 연결은 설명 편집을 지원하며, 화면에 옮기지 않은 원본 정보도 보존합니다. NVIDIA 추론 서버를 배포하는 구성은 아닙니다.
+
+## 디자인과 조사 자료
 
 검토 화면에는 [Open Props](https://github.com/argyleink/open-props)의 색상과 간격, [Lucide](https://github.com/lucide-icons/lucide)의 아이콘 두 개를 사용했습니다. 외부 서버를 요청하지 않으며, 내보낸 HTML에도 라이선스 전문이 포함됩니다. [출처와 사용 조건](THIRD_PARTY_NOTICES.md)을 확인할 수 있습니다.
 
-[29개 저장소 조사](research/ontology-ecosystem-review.md)를 통해 편집, 데이터 사전, 검색, 변경 영향 분석을 나눠 검토했습니다. Microsoft Ontology Playground는 편집 화면, NVIDIA Auto Ontology는 데이터 사전 연결 후보입니다. 두 엔진이 현재 확장에 통합된 상태는 아닙니다. [비교표](research/ontology-ecosystem-repositories.csv)에 별 수와 고정 커밋, 확인한 범위를 기록했습니다.
+[29개 저장소 조사](research/ontology-ecosystem-review.md)를 통해 편집, 데이터 사전, 검색, 변경 영향 분석을 검토한 뒤 위의 연결을 구현했습니다. 조사 문서는 구현 전의 기록이며, [비교표](research/ontology-ecosystem-repositories.csv)에 당시 별 수와 고정 커밋, 확인한 범위를 담았습니다.
 
 ## 데모 실행
 

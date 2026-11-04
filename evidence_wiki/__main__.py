@@ -26,9 +26,19 @@ def main(argv: list[str] | None = None) -> int:
     importer.add_argument("workspace", type=Path)
     importer.add_argument("input", help="CSV path relative to the workspace.")
     importer.add_argument("--out", required=True, help="New draft JSON path relative to the workspace.")
+    server = commands.add_parser("serve", help="Connect a native NVIDIA dictionary, Microsoft editor and local review workspace.")
+    server.add_argument("workspace", type=Path, help="An existing empty directory or a connection workspace.")
+    server.add_argument("--editor-dist", type=Path, required=True, help="Built Microsoft editor with /editor/ base path.")
+    server.add_argument("--port", type=int, default=8770)
     args = parser.parse_args(argv)
     try:
-        if args.command == "import-factlog":
+        if args.command == "serve":
+            from .server import serve
+            if not 1 <= args.port <= 65535:
+                raise EvidenceError("invalid_port", "Port must be between 1 and 65535.")
+            serve(args.workspace, args.editor_dist, args.port)
+            return 0
+        elif args.command == "import-factlog":
             root = workspace_root(args.workspace)
             destination = new_output_path(root, args.out)
             report = import_factlog(root, args.input)
